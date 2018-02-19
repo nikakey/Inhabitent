@@ -1,0 +1,46 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+
+// Colors
+
+$color__background-body: #fff;
+$color__text-main: #404040;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: #248A83;
+$color__link-hover-dark: #2f1339;
+$color__link-hover-light: #f0e4d1;
+
+$color__brand-bright: #d99054;
+$color__comment-date: #808080;
+$color__brand-light-grey: #a1a1a1;
+
+
+
+// Borders
+
+$border__solid: 1px solid #e1e1e1;
+$border__dashed: 1px dashed #c8c8c8;
+
+
+// Typography
+
+$font__main: 'Merriweather', 'Times New Roman', Times, serif;
+$font__heads: 'Novecento', Arial, sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.75;
+$font__line-height-pre: 1.6;
+
+
+// Text Transformation
+
+$text__uppercase: uppercase;
