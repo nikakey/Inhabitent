@@ -1,0 +1,30 @@
+.site-header {
+    padding: .5rem 0;
+    border-bottom: $border__solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: $color__fixed-header-backgroud;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.site-description {
+    display: none;
+}
+
+.logo {
+    width: 50px;
+    img {
+        width: 50px;
+    }
+}
