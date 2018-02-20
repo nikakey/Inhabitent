@@ -771,10 +771,6 @@ object {
 .site-header {
   padding: .5rem 0;
   border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
   background: rgba(255, 255, 255, 0.77); }
 
 .header-container {
