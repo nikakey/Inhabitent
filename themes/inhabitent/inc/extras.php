@@ -52,3 +52,26 @@ function inhabitent_login_title(){
 	return 'Inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_login_title');
+
+// Get img for the About Page
+
+function inhabitent_change_header(){
+	if(!is_page_template('page-template/about.php')){
+		return;
+	}
+
+	$img_header_url = CFS()->get('header_image');
+	if(! $img_header_url){
+		return;
+	}
+	$custom_css = "
+	.header-about {
+			background-image: url('{$img_header_url}');
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+	}";
+wp_add_inline_style( 'inhabitent-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_change_header' );

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 if ( ! function_exists( 'inhabitent_setup' ) ) :
@@ -94,6 +94,8 @@ function inhabitent_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_background' );
 
 /**
  * Custom template tags for this theme.
