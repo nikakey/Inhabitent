@@ -22,7 +22,7 @@
     }
     a{
         color: $color__background-body;
-        padding-left: .5rem;
+        padding-left: .75rem;
         &:hover {
             text-decoration: underline;
         }
@@ -75,10 +75,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
     li {
         display: inline;
-        padding-right: .5rem;
+        padding-right: .75rem;
         line-height: 2.75;
     }
 }
