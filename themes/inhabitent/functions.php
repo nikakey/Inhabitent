@@ -95,8 +95,6 @@ function inhabitent_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
-add_action( 'wp_enqueue_scripts', 'inhabitent_about_background' );
-
 /**
  * Custom template tags for this theme.
  */
