@@ -42,10 +42,9 @@ get_header(); ?>
 									'/images/product-type-icons/' . $term->slug; ?>.svg"
 									alt="<?php echo $term->name; ?>"/>
 								<p><?php echo $term->description; ?></p>
-								<p>
-									<a href="<?php echo get_term_link( $term ); ?>"
-									class="btn"><?php echo $term->name; ?> Stuff</a>
-								</p>
+								<button href="<?php echo get_term_link( $term ); ?>">
+									<?php echo $term->name; ?> Stuff
+								</button>
 							</div>
 						<?php endforeach; ?>
 					</div>
