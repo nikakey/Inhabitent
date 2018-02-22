@@ -711,10 +711,10 @@ object {
   .front-page-banner img {
     max-width: 100%; }
 
-.product-info-container {
+.product-info-container, .journal-info-container {
   width: 1120px;
   margin: 0 auto; }
-  .product-info-container h2 {
+  .product-info-container h2, .journal-info-container h2 {
     font-size: 2.5rem;
     font-weight: normal;
     color: #2f1339;
@@ -767,6 +767,36 @@ object {
       background-color: #19625d; }
   .product-type-block-wrapper:hover {
     border-color: #d99054; }
+
+.journal-info-container {
+  margin-bottom: 3rem; }
+
+.journal-post-blocks {
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem; }
+
+.journal-post-block-wrapper {
+  border: 1px solid #e1e1e1; }
+
+.journal-image-wrapper {
+  height: 250px; }
+  .journal-image-wrapper img {
+    border-bottom: 5px solid #e1e1e1;
+    height: 250px; }
+
+.journal-content-wrapper {
+  padding: .75rem; }
+  .journal-content-wrapper p {
+    margin: 0;
+    font-size: .75rem;
+    line-height: 2; }
+  .journal-content-wrapper h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    letter-spacing: 2px; }
 
 .site-footer {
   height: auto;

@@ -42,9 +42,9 @@ get_header(); ?>
 									'/images/product-type-icons/' . $term->slug; ?>.svg"
 									alt="<?php echo $term->name; ?>"/>
 								<p><?php echo $term->description; ?></p>
-								<button href="<?php echo get_term_link( $term ); ?>">
-									<?php echo $term->name; ?> Stuff
-								</button>
+								<a href="<?php echo get_term_link( $term ); ?>">
+									<button><?php echo $term->name; ?> Stuff</button>
+								</a>
 							</div>
 						<?php endforeach; ?>
 					</div>
@@ -69,11 +69,15 @@ get_header(); ?>
 				<div class="journal-post-blocks">
 					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 						<div class="journal-post-block-wrapper">
-							<?php the_post_thumbnail('medium_large'); ?>
-							<p>
-								<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-							</p>
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<div class="journal-image-wrapper">
+								<?php the_post_thumbnail('medium_large'); ?>
+							</div>
+							<div class="journal-content-wrapper">
+								<p>
+									<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+								</p>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							</div>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>

@@ -72,3 +72,43 @@
         border-color: $color__brand-bright;
     }
 }
+
+.journal-info-container {
+    @extend .product-info-container;
+    margin-bottom: 3rem;
+}
+
+.journal-post-blocks {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+}
+
+.journal-post-block-wrapper {
+    border: $border__solid;
+}
+
+.journal-image-wrapper {
+    height: 250px;
+    img {
+        border-bottom: 5px solid #e1e1e1;
+        height: 250px;
+    }
+}
+
+.journal-content-wrapper {
+    padding: .75rem;
+    p {
+        margin: 0;
+        font-size: .75rem;
+        line-height: 2;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        letter-spacing: $letters__wide__space;
+    }
+}
+
