@@ -38,5 +38,4 @@
 						</nav><!-- #site-navigation -->
 					</div><!-- .header-container -->
 				</header><!-- #masthead -->
-				<div class="wrapper">
-					<div id="content" class="site-content">
+				<div id="content" class="site-content">

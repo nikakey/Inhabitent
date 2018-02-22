@@ -3,3 +3,17 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-page-banner {
+    background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url(../../images/background/home-hero.jpg) no-repeat;
+    background-size: cover, 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+    }
+}
+

@@ -10,11 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<!-- Banner Section -->
+
+			<section class="front-page-banner">
+				<img src="<?php bloginfo('template_url'); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co. Logo">
+			</section>
+
 			<!-- Shop Section -->
 
 			<section class="product-info-container">
 			
-				<h1>Shop Stuff</h1>
+				<h2>Shop Stuff</h2>
 
 				<!-- Getting the products taxonomy data -->
 
@@ -24,14 +30,13 @@ get_header(); ?>
 						'hide_empty' => 0,
 						) 
 					);
-					if ( ! empty( $terms ) ) :
+				if ( ! empty( $terms ) ) :
+				?>
+					<!-- Displaying the products taxonomy data -->
+
+					<div class="product-type-blocks">
+						<?php foreach ( $terms as $term ) :
 						?>
-
-						<!-- Displaying the products taxonomy data -->
-
-						<div class="product-type-blocks">
-							<?php foreach ( $terms as $term ) :
-							?>
 							<div class="product-type-block-wrapper">
 								<img src="<?php echo get_template_directory_uri() .
 									'/images/product-type-icons/' . $term->slug; ?>.svg"
@@ -42,16 +47,16 @@ get_header(); ?>
 									class="btn"><?php echo $term->name; ?> Stuff</a>
 								</p>
 							</div>
-							<?php endforeach; ?>
-						</div>
-					<?php endif; ?>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
 			</section>
 
 			<!-- Journal Section -->
 			
 			<section class="journal-info-container">
 			
-				<h1>Inhabitent Journal</h1>
+				<h2>Inhabitent Journal</h2>
 
 				<!-- Getting the journal posts data -->
 			
@@ -62,14 +67,18 @@ get_header(); ?>
 
 				<!-- Displaying the journal posts data -->
 
-				<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-					<?php the_post_thumbnail('medium_large'); ?>
-					<div class="entry-meta">
-						<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-					</div><!-- .entry-meta -->
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<?php endforeach; wp_reset_postdata(); ?>
-				
+				<div class="journal-post-blocks">
+					<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+						<div class="journal-post-block-wrapper">
+							<?php the_post_thumbnail('medium_large'); ?>
+							<p>
+								<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+							</p>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						</div>
+					<?php endforeach; wp_reset_postdata(); ?>
+				</div>
+
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -7,8 +7,7 @@
 
 ?>
 
-				</div><!-- #content -->
-			</div><!-- .wrapper -->
+			</div><!-- #content -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div class="contact-info">
