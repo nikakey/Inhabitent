@@ -19,8 +19,8 @@ get_header(); ?>
                     </div>
                 </header><!-- .entry-header -->
 
-                <div class="entry-content about-content">
-                    <div class="content-container">
+                <div class="entry-content container">
+                    <div class="about-content">
                         <?php the_content(); ?>
                         <?php
                             wp_link_pages( array(

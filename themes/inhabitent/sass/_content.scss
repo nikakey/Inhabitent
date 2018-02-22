@@ -21,10 +21,16 @@
 	display: inline;
 }
 
+.entry-content {
+	@include center-block;
+	margin-top: 2.5rem;
+	margin-bottom: 4.5rem;
+}
+
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+
 }
 
 .page-links {

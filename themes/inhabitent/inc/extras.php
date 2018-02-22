@@ -72,7 +72,8 @@ function inhabitent_change_header(){
     		height: 100vh;
     		display: flex;
     		align-items: center;
-    		justify-content: center;
+			justify-content: center;
+			color: #fff;
 	}";
 wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
