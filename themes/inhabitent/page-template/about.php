@@ -19,14 +19,16 @@ get_header(); ?>
                     </div>
                 </header><!-- .entry-header -->
 
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                    <?php
-                        wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-                            'after'  => '</div>',
-                        ) );
-                    ?>
+                <div class="entry-content about-content">
+                    <div class="content-container">
+                        <?php the_content(); ?>
+                        <?php
+                            wp_link_pages( array(
+                                'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+                                'after'  => '</div>',
+                            ) );
+                        ?>
+                    </div>
                 </div><!-- .entry-content -->
             </article><!-- #post-## -->
 

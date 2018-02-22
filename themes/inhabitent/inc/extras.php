@@ -66,11 +66,13 @@ function inhabitent_change_header(){
 	}
 	$custom_css = "
 	.header-about {
-			background-image: url('{$img_header_url}');
-			background-size: cover;
-			background-repeat: no-repeat;
+			background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url('{$img_header_url}') no-repeat center bottom;
+			background-size: cover, 100%;
 			width: 100%;
-			height: 100vh;
+    		height: 100vh;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
 	}";
 wp_add_inline_style( 'inhabitent-style', $custom_css );
 }

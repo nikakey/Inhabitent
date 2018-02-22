@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Templates
 	## Front page
+	## About page
 # Footer
 # Sidebar
 # Header
@@ -819,6 +820,30 @@ object {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+/* About page */
+#post-24 {
+  margin-bottom: 4.5rem; }
+
+.entry-title {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0; }
+
+.about-content {
+  width: 1120px;
+  margin: 0 auto;
+  margin-top: 3rem; }
+
+.content-container {
+  width: 800px;
+  margin: 0 auto; }
+  .content-container h2 {
+    margin: 0;
+    font-size: 2.15rem;
+    text-align: center;
+    color: #2f1339;
+    letter-spacing: 2px; }
+
 .site-footer {
   height: auto;
   background: url(../../images/background/dark-wood.png) repeat-x;
@@ -904,9 +929,6 @@ object {
 .site-header {
   padding: .5rem 0;
   border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
   background: rgba(255, 255, 255, 0.77); }
 
 .header-container {
