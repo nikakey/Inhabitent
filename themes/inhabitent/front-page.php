@@ -77,6 +77,7 @@ get_header(); ?>
 									<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 								</p>
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<a href="<?php the_permalink(); ?>"><button class="black-btn">Read Entry</button></a>
 							</div>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
