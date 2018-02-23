@@ -27,6 +27,16 @@
 	margin-bottom: 4.5rem;
 }
 
+.page:not(.page-template-about):not(.home) .site-content,
+.archive .site-content,
+.blog .site-content,
+.single .site-content {
+	@include center-block;
+	width: 1120px;
+	display: flex;
+	justify-content: space-between;
+}
+
 .page-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;

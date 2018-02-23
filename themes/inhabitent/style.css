@@ -625,6 +625,20 @@ a {
   margin-top: 2.5rem;
   margin-bottom: 4.5rem; }
 
+.page:not(.page-template-about):not(.home) .site-content,
+.archive .site-content,
+.blog .site-content,
+.single .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .page-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
