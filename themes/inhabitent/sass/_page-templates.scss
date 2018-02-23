@@ -97,8 +97,10 @@
 
 /* About page */
 
-.about-title {
-    font-size: 3rem;
+.page-template-about {
+    .entry-title {
+        font-size: 3rem;
+    }
 }
 
 .container {
@@ -120,3 +122,19 @@
 
 /* Find Us Page */
 
+.p1 {
+    color: $color__link-hover-dark;
+    font-size: 2rem;
+    letter-spacing: $letters__wide__space;
+    margin: 0 0 1rem 0;
+}
+
+.p3 {
+    margin-bottom: 1.5rem;
+}
+
+#post-27 {
+    .entry-content {
+        margin-top: 1rem;
+    }
+}
