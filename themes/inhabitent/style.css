@@ -26,7 +26,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-# Globals
 # Navigation
 	## Links
 	## Menus
@@ -44,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 	## About page
+	## Find Us page
 # Footer
 # Sidebar
 # Header
@@ -437,7 +437,7 @@ input[type="submit"] {
   .black-btn:hover {
     background: #248A83;
     color: #fff;
-    border: 0;
+    border-color: #248A83;
     -webkit-box-shadow: none;
             box-shadow: none; }
 
@@ -469,13 +469,6 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
-
-.container {
-  width: 1120px; }
-
-.entry-title {
-  font-size: 3rem;
-  margin: 0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -645,6 +638,9 @@ a {
 .archive .format-aside .entry-title {
   display: none; }
 
+entry-title {
+  margin: 0; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -805,6 +801,14 @@ object {
     letter-spacing: 2px; }
 
 /* About page */
+.about-title {
+  font-size: 3rem; }
+
+.container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .about-content {
   width: 800px;
   margin: 0 auto; }
@@ -815,6 +819,7 @@ object {
     color: #2f1339;
     letter-spacing: 2px; }
 
+/* Find Us Page */
 .site-footer {
   height: auto;
   background: url(../../images/background/dark-wood.png) repeat-x;
@@ -825,10 +830,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

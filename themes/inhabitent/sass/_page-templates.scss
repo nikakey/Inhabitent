@@ -97,6 +97,15 @@
 
 /* About page */
 
+.about-title {
+    font-size: 3rem;
+}
+
+.container {
+    width: $container__width;
+    @include center-block;
+}
+
 .about-content {
     width: 800px;
     margin: $center__position;
@@ -108,3 +117,6 @@
         letter-spacing: $letters__wide__space;
     }
 }
+
+/* Find Us Page */
+

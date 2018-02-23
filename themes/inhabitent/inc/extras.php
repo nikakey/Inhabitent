@@ -78,3 +78,26 @@ function inhabitent_change_header(){
 wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_change_header' );
+
+// Title Shop Stuff and return 16 product items per page
+
+function inhab_archives($query){
+    if(
+        is_post_type_archive('product')
+    )
+    {
+        $query->set('posts_per_page', 16);    
+    }
+}
+
+add_action('pre_get_posts', 'inhab_archives');
+
+/**
+ * Modify archive title
+ */
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_post_type_archive( 'product' ) ) {
+            $title = 'Shop Stuff';
+    }
+    return $title;
+});

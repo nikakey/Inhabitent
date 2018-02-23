@@ -27,7 +27,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-# Globals
 # Navigation
 	## Links
 	## Menus
@@ -45,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 	## About page
+	## Find Us page
 # Footer
 # Sidebar
 # Header
@@ -62,7 +62,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography";
 @import "elements";
 @import "forms";
-@import "globals";
 @import "navigation";
 @import "modules";
 @import "widgets";
