@@ -192,6 +192,26 @@
 	margin: 1rem 0;
 }
 
+.single .entry-content {
+	p.p1 {
+		margin: $base__space-unit 0;
+	}
+}
+
+.single .entry-footer {
+	text-transform: $text__uppercase;
+	font-family: $font__heads;
+	.cat-links {
+		margin-right: $base__space-unit;
+	}
+}
+
+.social-btns {
+	span {
+		margin-left: .5rem;
+	}
+}
+
 .journal-button {
 	margin-bottom: 4rem;
 }
