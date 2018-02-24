@@ -21,6 +21,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'template-parts/content' ); ?>
+					<div class="journal-button"><a href="<?php the_permalink(); ?>"><button class="black-btn">Read More &rarr;</button></a></div>
 
 				<?php endwhile; ?>
 

@@ -807,6 +807,12 @@ a {
   .single .entry-meta img {
     max-width: 100%; }
 
+.post .entry-content {
+  margin: 1rem 0; }
+
+.journal-button {
+  margin-bottom: 4rem; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
