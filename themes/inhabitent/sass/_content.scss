@@ -43,6 +43,7 @@
 	#primary {
 		width: 70%;
 		margin-right: 4rem;
+		margin-top: 3rem;
 	}
 
 	/* Sidebar */
@@ -134,9 +135,33 @@
 .page .entry-title,
 .archive .page-title {
 	margin: 0;
-	margin-top: 2.25rem;
 	font-size: 2.35rem;
 	letter-spacing: $letters__wide__space;
+}
+
+.post .entry-title,
+.single .entry-title {
+	font-size: 2rem;
+	color: $color__background-body;
+	background-color: $color__link;
+	width: 500px;
+	padding: 1rem;
+	line-height: 1.2;
+	letter-spacing: $letters__wide__space;
+	position: absolute;
+	top: 0;
+	left: 0;
+	a {
+		color: $color__background-body;
+		&:hover {
+			color: $color__link-hover-light;
+		}
+	}
+}
+
+.post .entry-header,
+.single .entry-header {
+	position: relative;
 }
 
 /* Comments */

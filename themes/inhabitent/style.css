@@ -656,7 +656,8 @@ a {
   .blog .site-content #primary,
   .single .site-content #primary {
     width: 70%;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    margin-top: 3rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
   .archive .site-content #secondary,
   .blog .site-content #secondary,
@@ -764,9 +765,31 @@ a {
 .page .entry-title,
 .archive .page-title {
   margin: 0;
-  margin-top: 2.25rem;
   font-size: 2.35rem;
   letter-spacing: 2px; }
+
+.post .entry-title,
+.single .entry-title {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #248A83;
+  width: 500px;
+  padding: 1rem;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .post .entry-title a,
+  .single .entry-title a {
+    color: #fff; }
+    .post .entry-title a:hover,
+    .single .entry-title a:hover {
+      color: #f0e4d1; }
+
+.post .entry-header,
+.single .entry-header {
+  position: relative; }
 
 /* Comments */
 .comment-content a {
@@ -893,7 +916,8 @@ object {
   .product-type-block-wrapper img {
     width: 70px; }
   .product-type-block-wrapper p {
-    text-align: center; }
+    text-align: center;
+    margin: 1rem 0 1.5rem 0; }
   .product-type-block-wrapper:hover {
     border-color: #d99054; }
 
@@ -959,6 +983,7 @@ object {
 #post-27 .entry-content {
   margin-top: 1rem; }
 
+/* Shop Page*/
 .site-footer {
   height: auto;
   background: url(../../images/background/dark-wood.png) repeat-x;
