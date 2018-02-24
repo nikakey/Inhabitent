@@ -795,6 +795,7 @@ a {
 .single .entry-meta {
   font-size: 1rem;
   font-style: normal;
+  font-family: "Novecento", Arial, sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #248A83;
@@ -806,6 +807,12 @@ a {
   .post .entry-meta img,
   .single .entry-meta img {
     max-width: 100%; }
+  .post .entry-meta a,
+  .single .entry-meta a {
+    color: #fff; }
+    .post .entry-meta a:hover,
+    .single .entry-meta a:hover {
+      color: #f0e4d1; }
 
 .post .entry-content {
   margin: 1rem 0; }
@@ -994,7 +1001,7 @@ object {
     letter-spacing: 2px; }
 
 /* Find Us Page */
-.p1 {
+h2.p1 {
   color: #2f1339;
   font-size: 2rem;
   letter-spacing: 2px;
