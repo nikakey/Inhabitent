@@ -224,3 +224,97 @@
 .bypostauthor {
 	display: block;
 }
+
+.comments-area {
+	#reply-title {
+		font-size: 1.75rem;
+		letter-spacing: $letters__wide__space;
+		margin: $base__space-unit 0;
+	}
+	.comments-title {
+		font-size: 2rem;
+		letter-spacing: $letters__wide__space;
+		color: $color__link-hover-dark;
+		margin: 2.75rem 0 0 0;
+		line-height: 1;
+	}
+
+	.comment-list {
+		margin: 0 0 1rem 0;
+		padding: 0;
+		list-style: none;
+		ul {
+			list-style: none;
+		}
+	}
+
+	.comment-body {
+		display: flex;
+		border-bottom: $border__solid;
+		padding-top: 1.25rem;
+		padding-bottom: 1.5rem;
+		p {
+			margin: .5rem 0 1rem 0;
+		}
+	}
+
+	.comment-author-avatar {
+		padding-right: 3rem;
+		img {
+			border-radius: 50%;
+			width: 70px;
+			height: 70px;
+		}
+	}
+
+	cite {
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	.comment-metadata {
+		color: $color__brand-light-grey;
+		margin-bottom: .5rem;
+
+	}
+	.comment-form {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		line-height: 1;
+		input {
+			margin: 1rem 0 0 0;
+		}
+		p {
+			margin-bottom: $base__space-unit;
+		}
+		.comment-form-comment {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			textarea {
+				margin-bottom: 0;
+				margin-top: 1rem;
+			}
+		}
+		.comment-form-author {
+			width: 49%;
+			display: flex;
+			flex-direction: column;
+			margin-right: 2%;
+		}
+		.comment-form-email {
+			width: 49%;
+			display: flex;
+			flex-direction: column;
+		}
+		.comment-form-url {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		.form-submit {
+			margin-bottom: 3.5rem;
+		}
+	}
+}
