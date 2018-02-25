@@ -243,14 +243,17 @@
 		margin: 0 0 1rem 0;
 		padding: 0;
 		list-style: none;
+		>li {
+			border-bottom: $border__solid;
+		}
 		ul {
 			list-style: none;
+			border-top: $border__solid;
 		}
 	}
 
 	.comment-body {
 		display: flex;
-		border-bottom: $border__solid;
 		padding-top: 1.25rem;
 		padding-bottom: 1.5rem;
 		p {

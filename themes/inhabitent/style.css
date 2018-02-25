@@ -857,14 +857,16 @@ a {
   margin: 0 0 1rem 0;
   padding: 0;
   list-style: none; }
+  .comments-area .comment-list > li {
+    border-bottom: 1px solid #e1e1e1; }
   .comments-area .comment-list ul {
-    list-style: none; }
+    list-style: none;
+    border-top: 1px solid #e1e1e1; }
 
 .comments-area .comment-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #e1e1e1;
   padding-top: 1.25rem;
   padding-bottom: 1.5rem; }
   .comments-area .comment-body p {
