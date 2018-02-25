@@ -1171,7 +1171,38 @@ h2.p1 {
             justify-content: space-between; }
     .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item {
       width: 23%;
-      border: 1px solid #e1e1e1; }
+      border: 1px solid #e1e1e1;
+      overflow: hidden; }
+      .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img {
+          border-bottom: 5px solid #e1e1e1;
+          height: 250px;
+          width: auto; }
+    .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: .5rem 1rem .75rem 1rem; }
+      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title {
+        font-size: 1rem;
+        font-family: "Merriweather", "Times New Roman", Times, serif;
+        text-transform: none;
+        font-weight: normal;
+        margin: 0; }
+        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before {
+          float: left;
+          content: '........................................';
+          width: 0;
+          white-space: nowrap; }
 
 .site-footer {
   height: auto;

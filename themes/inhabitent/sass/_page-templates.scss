@@ -177,7 +177,35 @@ h2.p1 {
             .shop-item {
                 width: 23%;
                 border: $border__solid;
-                
+                overflow: hidden;
+                .image-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        border-bottom: 5px solid #e1e1e1;
+                        height: 250px;
+                        width: auto;
+                    }
+                }
+            }
+            .content-products-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: .5rem 1rem .75rem 1rem;
+                .entry-title {
+                    font-size: 1rem;
+                    font-family: $font__main;
+                    text-transform: none;
+                    font-weight: normal;
+                    margin: 0;
+                    &:before {
+                        float: left;
+                        content: '........................................';
+                        // border-bottom: 2px solid $color__text-main;
+                        width: 0;
+                        white-space: nowrap;
+                    }
+                }
             }
         }
     }
