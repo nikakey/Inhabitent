@@ -16,11 +16,8 @@ get_header(); ?>
                 <header class="page-header">
                     <?php
                         the_archive_title( '<h1 class="page-title">', '</h1>' );
-                    
                     ?>
-                </header><!-- .page-header -->
-                
-                <?php
+                    <?php
                 $terms = get_terms ( array(
                     'taxonomy' => 'product_type',
                     'hide_empty' => 0,
@@ -29,46 +26,42 @@ get_header(); ?>
                 if ( ! empty ($terms) ):
                     ?>
 
-                    <div class="product-type-wrapper">
+                    <div class="product-type-container">
 
                         <?php foreach ( $terms as $term ):?>
 
-                        <div class="product-type-blocks">
-                                    <p>
-                                            <a href="<?php echo get_term_link( $term ); ?>"
-                                                class="btn"><?php echo $term->name; ?></a>
-                                    </p>
-                            </div>
+                        <div class="product-type-taxonomy">
+                            <p><a href="<?php echo get_term_link( $term ); ?>"
+                                class="product-type-link"><?php echo $term->name; ?></a></p>
+                        </div>
 
-                                    <?php endforeach; ?>
+                        <?php endforeach; ?>
 
-                            </div><!-- product-type-wrapper -->
-                    <?php endif; ?>
+                    </div><!-- product-type-container -->
+                    
+                <?php endif; ?>
+                </header><!-- .page-header -->
+
+                <?php if ( have_posts() ) : ?>
+
+                    <?php /* Start the Loop */ ?>
+                    <div class="products-wrapper">
+                        <?php while ( have_posts() ) : the_post(); ?>
+
+                            <?php get_template_part( 'template-parts/products-archives', 'none' ); ?>
+                            
+                        <?php endwhile; ?>
+                    </div>
+
+                    <?php the_posts_navigation(); ?>
+
+                <?php else : ?>
+
+                    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+                <?php endif; ?>
+
             </section>
-
-
-
-
-        <?php if ( have_posts() ) : ?>
-
-            <?php /* Start the Loop */ ?>
-            <div class="products-wrapper">
-            <?php while ( have_posts() ) : the_post(); ?>
-
-                <?php get_template_part( 'template-parts/products-archives', 'none' ); ?>
-
-
-            <?php endwhile; ?>
-            </div>
-
-            <?php the_posts_navigation(); ?>
-
-        <?php else : ?>
-
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-        <?php endif; ?>
-
         </main><!-- #main -->
     </div><!-- #primary -->
 
