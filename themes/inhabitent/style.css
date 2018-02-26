@@ -1229,7 +1229,7 @@ h2.p1 {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: .5rem 1rem .75rem 1rem; }
+      padding: .5rem 0 .75rem 1rem; }
       .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title,
       .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title,
       .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home
@@ -1240,14 +1240,22 @@ h2.p1 {
         font-weight: normal;
         margin: 0;
         background: #fff; }
-        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before,
-        .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before,
-        .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home
-        .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before {
-          float: left;
+        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:after, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after,
+        .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:after,
+        .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home
+        .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after {
+          float: right;
           content: '........................................';
           width: 0;
-          white-space: nowrap; }
+          white-space: nowrap;
+          padding-left: .25rem; }
+      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .price, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .price, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .price,
+      .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .price,
+      .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .price, .home
+      .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .price {
+        background-color: #fff;
+        padding-right: .5rem;
+        padding-left: .25rem; }
 
 /* Single Product Page */
 .site-footer {

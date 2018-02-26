@@ -197,7 +197,7 @@ h2.p1 {
             .content-products-wrapper {
                 display: flex;
                 justify-content: space-between;
-                padding: .5rem 1rem .75rem 1rem;
+                padding: .5rem 0 .75rem 1rem;
                 .entry-title {
                     font-size: 1rem;
                     font-family: $font__main;
@@ -205,13 +205,19 @@ h2.p1 {
                     font-weight: normal;
                     margin: 0;
                     background: $color__background-body;
-                    &:before {
-                        float: left;
+                    &:after {
+                        float: right;
                         content: '........................................';
                         // border-bottom: 2px solid $color__text-main;
                         width: 0;
                         white-space: nowrap;
+                        padding-left: .25rem;
                     }
+                }
+                .price {
+                    background-color: $color__background-body;
+                    padding-right: .5rem;
+                    padding-left: .25rem;
                 }
             }
         }
