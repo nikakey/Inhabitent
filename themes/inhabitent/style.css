@@ -44,6 +44,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 	## About page
 	## Find Us page
+	## Shop Archive Pages
+	## Single Product Page
+	## Search and 404 Pages
 # Footer
 # Header
 --------------------------------------------------------------*/
@@ -399,7 +402,8 @@ table {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.page-numbers {
   color: #fff;
   background: #248A83;
   font-size: 1rem;
@@ -411,13 +415,22 @@ input[type="submit"] {
           box-shadow: none;
   border-radius: 0;
   text-shadow: none;
-  line-height: 1;
-  padding: .75rem 1.25rem; }
+  line-height: 1; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover,
+  .page-numbers:hover {
     background-color: #19625d; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  padding: .75rem 1.25rem; }
+
+.page-numbers {
+  padding: .5rem .75rem; }
 
 .black-btn {
   background: #fff;
@@ -802,7 +815,7 @@ a {
 .format-aside .entry-title {
   display: none; }
 
-.page .entry-title,
+.page:not(.home) .entry-title,
 .archive .page-title {
   margin: 0;
   font-size: 2.35rem;
@@ -1335,6 +1348,32 @@ h2.p1 {
 .search .site-content ol {
   margin: 0;
   padding: 0; }
+
+.search article {
+  margin-bottom: 3rem; }
+  .search article .entry-title {
+    font-size: 2rem;
+    line-height: 1;
+    position: initial;
+    background-color: initial;
+    color: #248A83;
+    padding: 0; }
+    .search article .entry-title a {
+      color: #248A83; }
+      .search article .entry-title a:hover {
+        color: #2f1339; }
+  .search article .entry-meta {
+    position: initial;
+    background-color: initial;
+    color: #404040;
+    padding: 0; }
+
+.search .search-black-buttons {
+  margin-top: 2rem; }
+
+.search .search-pagination {
+  padding-top: 2rem;
+  border-top: 1px solid #e1e1e1; }
 
 .site-footer {
   height: auto;

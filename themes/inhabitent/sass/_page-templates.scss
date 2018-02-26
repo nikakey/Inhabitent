@@ -279,3 +279,36 @@ h2.p1 {
         padding: 0;
     }
 }
+
+.search {
+    article {
+        margin-bottom: 3rem;
+        .entry-title {
+            font-size: 2rem;
+            line-height: 1;
+            position: initial;
+            background-color: initial;
+            color: $color__link;
+            padding: 0;
+            a {
+                color: $color__link;
+                &:hover {
+                    color: $color__link-hover-dark;
+                }
+            }
+        }
+        .entry-meta {
+            position: initial;
+            background-color: initial;
+            color: $color__text-main;
+            padding: 0;
+        }
+    }
+    .search-black-buttons {
+        margin-top: 2rem;
+    }
+    .search-pagination {
+        padding-top: 2rem;
+        border-top: $border__solid;
+    }
+}

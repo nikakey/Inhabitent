@@ -143,7 +143,7 @@
 	display: none;
 }
 
-.page .entry-title,
+.page:not(.home) .entry-title,
 .archive .page-title {
 	margin: 0;
 	font-size: 2.35rem;

@@ -7,7 +7,8 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.page-numbers {
 	color: $color__background-body;
 	background: $color__link;
 	font-size: 1rem;
@@ -19,12 +20,23 @@ input[type="submit"] {
 	border-radius: 0;
 	text-shadow: none;
 	line-height: 1;
-	padding: .75rem 1.25rem;
 
 	&:hover {
 		background-color: darken($color: $color__link, $amount: 10);
 	}
 }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+	padding: .75rem 1.25rem;
+}
+
+.page-numbers {
+	padding: .5rem .75rem;
+}
+
 
 .black-btn {
     background: $color__background-body;
