@@ -93,11 +93,17 @@ function inhab_archives($query){
 add_action('pre_get_posts', 'inhab_archives');
 
 /**
- * Modify archive title
+ * Modify archive titles
  */
 add_filter( 'get_the_archive_title', function ( $title ) {
     if( is_post_type_archive( 'product' ) ) {
             $title = 'Shop Stuff';
-    }
+	}
+
+	if (is_tax())
+	{
+		$terms = wp_get_post_terms( get_the_ID(), 'product_type', array("fields" => "all") );
+		$title = $terms[0]->name;
+	}
     return $title;
 });

@@ -144,7 +144,8 @@ h2.p1 {
 }
 
 /* Shop Page*/
-.post-type-archive-product .site-content {
+.post-type-archive-product .site-content,
+.tax-product_type .site-content {
 	margin-top: 3rem;
     .product-info-container {
         .page-header {

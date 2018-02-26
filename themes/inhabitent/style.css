@@ -641,13 +641,14 @@ a {
 .page:not(.page-template-about):not(.home) .site-content,
 .archive .site-content,
 .blog .site-content,
-.single .site-content {
+.single .site-content,
+.tax-product_type .site-content {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
 
 .page:not(.page-template-about):not(.home) .site-content,
-.archive:not(.post-type-archive-product) .site-content,
+.archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
 .blog .site-content,
 .single .site-content {
   display: -webkit-box;
@@ -659,14 +660,14 @@ a {
   /* Content Area */
   /* Sidebar */ }
   .page:not(.page-template-about):not(.home) .site-content #primary,
-  .archive:not(.post-type-archive-product) .site-content #primary,
+  .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #primary,
   .blog .site-content #primary,
   .single .site-content #primary {
     width: 70%;
     margin-right: 4rem;
     margin-top: 3rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
-  .archive:not(.post-type-archive-product) .site-content #secondary,
+  .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary,
   .blog .site-content #secondary,
   .single .site-content #secondary {
     width: 30%;
@@ -685,66 +686,66 @@ a {
             align-items: flex-end;
     border-left: 1px solid #e1e1e1; }
     .page:not(.page-template-about):not(.home) .site-content #secondary .widget,
-    .archive:not(.post-type-archive-product) .site-content #secondary .widget,
+    .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget,
     .blog .site-content #secondary .widget,
     .single .site-content #secondary .widget {
       width: 260px;
       margin: 2.5rem 0 0 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:first-child,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget:first-child,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:first-child,
       .blog .site-content #secondary .widget:first-child,
       .single .site-content #secondary .widget:first-child {
         margin-top: 3.5rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:last-child,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget:last-child,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:last-child,
       .blog .site-content #secondary .widget:last-child,
       .single .site-content #secondary .widget:last-child {
         margin-bottom: 3rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget ul,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget ul,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget ul,
       .blog .site-content #secondary .widget ul,
       .single .site-content #secondary .widget ul {
         list-style: none;
         padding: 0;
         margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .widget-title,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget .widget-title,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .widget-title,
       .blog .site-content #secondary .widget .widget-title,
       .single .site-content #secondary .widget .widget-title {
         margin: 0 0 1.25rem 0;
         letter-spacing: 2px; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li,
       .blog .site-content #secondary .widget .textwidget ul li,
       .single .site-content #secondary .widget .textwidget ul li {
         margin: 1rem 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:first-child,
-        .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li:first-child,
+        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:first-child,
         .blog .site-content #secondary .widget .textwidget ul li:first-child,
         .single .site-content #secondary .widget .textwidget ul li:first-child {
           margin-top: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:last-child,
-        .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li:last-child,
+        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:last-child,
         .blog .site-content #secondary .widget .textwidget ul li:last-child,
         .single .site-content #secondary .widget .textwidget ul li:last-child {
           margin-bottom: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li a,
-        .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li a,
+        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li a,
         .blog .site-content #secondary .widget .textwidget ul li a,
         .single .site-content #secondary .widget .textwidget ul li a {
           padding-left: .75rem; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address,
-        .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li .address,
+        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address,
         .blog .site-content #secondary .widget .textwidget ul li .address,
         .single .site-content #secondary .widget .textwidget ul li .address {
           display: inline-grid; }
           .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address p,
-          .archive:not(.post-type-archive-product) .site-content #secondary .widget .textwidget ul li .address p,
+          .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address p,
           .blog .site-content #secondary .widget .textwidget ul li .address p,
           .single .site-content #secondary .widget .textwidget ul li .address p {
             margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .day-of-week,
-      .archive:not(.post-type-archive-product) .site-content #secondary .widget .day-of-week,
+      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .day-of-week,
       .blog .site-content #secondary .widget .day-of-week,
       .single .site-content #secondary .widget .day-of-week {
         font-weight: bold; }
@@ -1134,14 +1135,21 @@ h2.p1 {
   margin-top: 1rem; }
 
 /* Shop Page*/
-.post-type-archive-product .site-content {
+.post-type-archive-product .site-content,
+.tax-product_type .site-content {
   margin-top: 3rem; }
-  .post-type-archive-product .site-content .product-info-container .page-header, .post-type-archive-product .site-content .home .journal-info-container .page-header, .home .post-type-archive-product .site-content .journal-info-container .page-header {
+  .post-type-archive-product .site-content .product-info-container .page-header, .post-type-archive-product .site-content .home .journal-info-container .page-header, .home .post-type-archive-product .site-content .journal-info-container .page-header,
+  .tax-product_type .site-content .product-info-container .page-header,
+  .tax-product_type .site-content .home .journal-info-container .page-header, .home
+  .tax-product_type .site-content .journal-info-container .page-header {
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 2.5rem; }
-    .post-type-archive-product .site-content .product-info-container .page-header .product-type-container, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container {
+    .post-type-archive-product .site-content .product-info-container .page-header .product-type-container, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container,
+    .tax-product_type .site-content .product-info-container .page-header .product-type-container,
+    .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container, .home
+    .tax-product_type .site-content .journal-info-container .page-header .product-type-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1151,16 +1159,28 @@ h2.p1 {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy {
+      .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy,
+      .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy,
+      .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy, .home
+      .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy {
         margin-right: 2.75rem; }
-        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child {
+        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child,
+        .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy:last-child,
+        .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home
+        .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child {
           margin-right: 0; }
-        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy p, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy p {
+        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy p, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy p,
+        .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy p,
+        .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .home
+        .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy p {
           text-transform: uppercase;
           font-family: "Novecento", Arial, sans-serif;
           font-size: 1.25rem;
           margin: 1.5rem 0; }
-  .post-type-archive-product .site-content .product-info-container .products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper {
+  .post-type-archive-product .site-content .product-info-container .products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper,
+  .tax-product_type .site-content .product-info-container .products-wrapper,
+  .tax-product_type .site-content .home .journal-info-container .products-wrapper, .home
+  .tax-product_type .site-content .journal-info-container .products-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1169,22 +1189,34 @@ h2.p1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item {
+    .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item,
+    .tax-product_type .site-content .product-info-container .products-wrapper .shop-item,
+    .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item, .home
+    .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item {
       width: 23%;
       border: 1px solid #e1e1e1;
       overflow: hidden; }
-      .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper {
+      .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper,
+      .tax-product_type .site-content .product-info-container .products-wrapper .shop-item .image-wrapper,
+      .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home
+      .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img {
+        .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img,
+        .tax-product_type .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img,
+        .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home
+        .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img {
           border-bottom: 5px solid #e1e1e1;
           height: 250px;
           width: auto; }
-    .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper {
+    .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper,
+    .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper,
+    .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home
+    .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1192,13 +1224,19 @@ h2.p1 {
           -ms-flex-pack: justify;
               justify-content: space-between;
       padding: .5rem 1rem .75rem 1rem; }
-      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title {
+      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title,
+      .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title,
+      .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home
+      .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title {
         font-size: 1rem;
         font-family: "Merriweather", "Times New Roman", Times, serif;
         text-transform: none;
         font-weight: normal;
         margin: 0; }
-        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before {
+        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before,
+        .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before,
+        .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home
+        .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before {
           float: left;
           content: '........................................';
           width: 0;
