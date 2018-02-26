@@ -1148,7 +1148,7 @@ object {
     letter-spacing: 2px; }
 
 /* About page */
-.page-template-about .entry-title {
+.page-template-about .header-about .entry-title {
   font-size: 3rem; }
 
 .container {
@@ -1456,7 +1456,7 @@ h2.p1 {
 .site-header {
   padding: .5rem 0;
   border-bottom: 1px solid #e1e1e1;
-  background: rgba(255, 255, 255, 0.77); }
+  background: transparent; }
 
 .header-container {
   display: -webkit-box;
