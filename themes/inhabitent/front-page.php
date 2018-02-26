@@ -84,6 +84,34 @@ get_header(); ?>
 				</div>
 
 			</section>
+
+			<section class="adventures-info-container">
+
+				<h2>Latest Adventures</h2>
+
+				<div class="adventures-block-wrapper">
+					<div class="adventure-block-1">
+					<a href="#"><h3 class="adventure-title">Getting Back to Nature in a Canoe</h3></a>
+						<button class="white-btn">Read More</button>
+					</div>
+					<div class="adventure-block-2">
+					<a href="#"><h3 class="adventure-title">A Night with Friends at the Beach</h3></a>
+						<button class="white-btn">Read More</button>
+					</div>
+					<div class="adventure-block-3">
+					<a href="#"><h3 class="adventure-title">Taking in the View at Big Mountain</h3></a>
+						<button class="white-btn">Read More</button>
+					</div>
+					<div class="adventure-block-4">
+					<a href="#"><h3 class="adventure-title">Star-Gazing at the Night Sky</h3></a>
+						<button class="white-btn">Read More</button></a>
+					</div>
+				</div>
+
+				<button class="adventures-btn">More Adventures</button>
+
+			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
