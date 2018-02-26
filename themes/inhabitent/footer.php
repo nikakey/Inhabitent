@@ -33,7 +33,7 @@
 					</div>
 				</div><!-- .site-info -->
 				<div class="site-copyright">
-					<p class="text-copyright">Copyright <span class="sign-copyright">&#9400;</span> 2017 Inhabitent</p>
+					<p class="text-copyright">Copyright <span class="sign-copyright">&#9400;</span> 2018 Inhabitent</p>
 				</div><!-- .site-copyright -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
