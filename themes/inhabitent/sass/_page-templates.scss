@@ -225,3 +225,20 @@ h2.p1 {
 
 /* Single Product Page */
 
+/* Search and 404 Pages */
+
+.error404 .site-content,
+.search .site-content {
+    #primary {
+        margin-bottom: 4rem;
+    }
+    .page-title {
+        font-size: 2.35rem;
+        letter-spacing: $letters__wide__space;
+        margin: 0;
+    }
+    ul, ol {
+        margin: 0;
+        padding: 0;
+    }
+}

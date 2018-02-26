@@ -366,10 +366,10 @@ ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none; }
 
 ol {
-  list-style: decimal; }
+  list-style: none; }
 
 li > ul,
 li > ol {
@@ -642,7 +642,9 @@ a {
 .archive .site-content,
 .blog .site-content,
 .single .site-content,
-.tax-product_type .site-content {
+.tax-product_type .site-content,
+.search .site-content,
+.error404 .site-content {
   margin-left: auto;
   margin-right: auto;
   width: 1120px; }
@@ -650,7 +652,9 @@ a {
 .page:not(.page-template-about):not(.home) .site-content,
 .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
 .blog .site-content,
-.single:not(.single-product) .site-content {
+.single:not(.single-product) .site-content,
+.search .site-content,
+.error404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,14 +666,18 @@ a {
   .page:not(.page-template-about):not(.home) .site-content #primary,
   .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #primary,
   .blog .site-content #primary,
-  .single:not(.single-product) .site-content #primary {
+  .single:not(.single-product) .site-content #primary,
+  .search .site-content #primary,
+  .error404 .site-content #primary {
     width: 70%;
     margin-right: 4rem;
     margin-top: 3rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
   .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary,
   .blog .site-content #secondary,
-  .single:not(.single-product) .site-content #secondary {
+  .single:not(.single-product) .site-content #secondary,
+  .search .site-content #secondary,
+  .error404 .site-content #secondary {
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,66 +696,90 @@ a {
     .page:not(.page-template-about):not(.home) .site-content #secondary .widget,
     .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget,
     .blog .site-content #secondary .widget,
-    .single:not(.single-product) .site-content #secondary .widget {
+    .single:not(.single-product) .site-content #secondary .widget,
+    .search .site-content #secondary .widget,
+    .error404 .site-content #secondary .widget {
       width: 260px;
       margin: 2.5rem 0 0 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:first-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:first-child,
       .blog .site-content #secondary .widget:first-child,
-      .single:not(.single-product) .site-content #secondary .widget:first-child {
+      .single:not(.single-product) .site-content #secondary .widget:first-child,
+      .search .site-content #secondary .widget:first-child,
+      .error404 .site-content #secondary .widget:first-child {
         margin-top: 3.5rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:last-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:last-child,
       .blog .site-content #secondary .widget:last-child,
-      .single:not(.single-product) .site-content #secondary .widget:last-child {
+      .single:not(.single-product) .site-content #secondary .widget:last-child,
+      .search .site-content #secondary .widget:last-child,
+      .error404 .site-content #secondary .widget:last-child {
         margin-bottom: 3rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget ul,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget ul,
       .blog .site-content #secondary .widget ul,
-      .single:not(.single-product) .site-content #secondary .widget ul {
+      .single:not(.single-product) .site-content #secondary .widget ul,
+      .search .site-content #secondary .widget ul,
+      .error404 .site-content #secondary .widget ul {
         list-style: none;
         padding: 0;
         margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .widget-title,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .widget-title,
       .blog .site-content #secondary .widget .widget-title,
-      .single:not(.single-product) .site-content #secondary .widget .widget-title {
+      .single:not(.single-product) .site-content #secondary .widget .widget-title,
+      .search .site-content #secondary .widget .widget-title,
+      .error404 .site-content #secondary .widget .widget-title {
         margin: 0 0 1.25rem 0;
         letter-spacing: 2px; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li,
       .blog .site-content #secondary .widget .textwidget ul li,
-      .single:not(.single-product) .site-content #secondary .widget .textwidget ul li {
+      .single:not(.single-product) .site-content #secondary .widget .textwidget ul li,
+      .search .site-content #secondary .widget .textwidget ul li,
+      .error404 .site-content #secondary .widget .textwidget ul li {
         margin: 1rem 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:first-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:first-child,
         .blog .site-content #secondary .widget .textwidget ul li:first-child,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:first-child {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:first-child,
+        .search .site-content #secondary .widget .textwidget ul li:first-child,
+        .error404 .site-content #secondary .widget .textwidget ul li:first-child {
           margin-top: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:last-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:last-child,
         .blog .site-content #secondary .widget .textwidget ul li:last-child,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:last-child {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:last-child,
+        .search .site-content #secondary .widget .textwidget ul li:last-child,
+        .error404 .site-content #secondary .widget .textwidget ul li:last-child {
           margin-bottom: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li a,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li a,
         .blog .site-content #secondary .widget .textwidget ul li a,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li a {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li a,
+        .search .site-content #secondary .widget .textwidget ul li a,
+        .error404 .site-content #secondary .widget .textwidget ul li a {
           padding-left: .75rem; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address,
         .blog .site-content #secondary .widget .textwidget ul li .address,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address,
+        .search .site-content #secondary .widget .textwidget ul li .address,
+        .error404 .site-content #secondary .widget .textwidget ul li .address {
           display: inline-grid; }
           .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address p,
           .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address p,
           .blog .site-content #secondary .widget .textwidget ul li .address p,
-          .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address p {
+          .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address p,
+          .search .site-content #secondary .widget .textwidget ul li .address p,
+          .error404 .site-content #secondary .widget .textwidget ul li .address p {
             margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .day-of-week,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .day-of-week,
       .blog .site-content #secondary .widget .day-of-week,
-      .single:not(.single-product) .site-content #secondary .widget .day-of-week {
+      .single:not(.single-product) .site-content #secondary .widget .day-of-week,
+      .search .site-content #secondary .widget .day-of-week,
+      .error404 .site-content #secondary .widget .day-of-week {
         font-weight: bold; }
 
 .business-hours-widget-class p {
@@ -1258,6 +1290,23 @@ h2.p1 {
         padding-left: .25rem; }
 
 /* Single Product Page */
+/* Search and 404 Pages */
+.error404 .site-content #primary,
+.search .site-content #primary {
+  margin-bottom: 4rem; }
+
+.error404 .site-content .page-title,
+.search .site-content .page-title {
+  font-size: 2.35rem;
+  letter-spacing: 2px;
+  margin: 0; }
+
+.error404 .site-content ul, .error404 .site-content ol,
+.search .site-content ul,
+.search .site-content ol {
+  margin: 0;
+  padding: 0; }
+
 .site-footer {
   height: auto;
   background: url(../../images/background/dark-wood.png) repeat-x;
