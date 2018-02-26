@@ -225,6 +225,43 @@ h2.p1 {
 
 /* Single Product Page */
 
+.single-product {
+    .site-content {
+        .product {
+            margin-top: 3rem;
+            margin-bottom: 4.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            .product-image-container {
+                width: 47%;
+            }
+            .product-content-container {
+                width: 47%;
+                margin: 0 0 0 3rem;
+                .entry-title {
+                    margin: 0;
+                    line-height: 1;
+                    font-size: 2.5rem;
+                    letter-spacing: $letters__wide__space;
+                    color: $color__brand-bright;
+                }
+                .entry-content {
+                    margin: 0;
+                    .price {
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 1;
+                        margin: 1.5rem 0;
+                    }
+                    .social-btns {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Search and 404 Pages */
 
 .error404 .site-content,

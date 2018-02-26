@@ -13,13 +13,18 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
+			
+		
+			<div class="product-image-container">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
-
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</header><!-- .entry-header -->
+			</div>
+		
+			<div class="product-content-container">
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
 
 			<div class="entry-content">
 				<h3 class="price"><?php echo CFS()->get( 'price' ); ?></h3>
@@ -30,7 +35,14 @@ get_header(); ?>
 						'after'  => '</div>',
 					) );
 				?>
+				
+				<div class="social-btns">
+					<button class="black-btn"><i class="fab fa-facebook-f" data-fa-transform="shrink-4"></i><span>Like</span></button>
+					<button class="black-btn"><i class="fab fa-twitter" data-fa-transform="shrink-4"></i><span>Tweet</span></button>
+					<button class="black-btn"><i class="fab fa-pinterest" data-fa-transform="shrink-4"></i><span>Pin</span></button>
+				</div>
 			</div><!-- .entry-content -->
+			</div>
 		</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
