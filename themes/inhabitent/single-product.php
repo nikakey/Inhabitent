@@ -19,10 +19,6 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-				<div class="entry-meta">
-					<?php inhabitent_posted_on(); ?> / <?php inhabitent_comment_count(); ?> / <?php inhabitent_posted_by(); ?>
-				</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 
 			<div class="entry-content">
@@ -35,25 +31,11 @@ get_header(); ?>
 					) );
 				?>
 			</div><!-- .entry-content -->
-
-			<footer class="entry-footer">
-				<?php inhabitent_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
-
-		<?php the_post_navigation(); ?>
-
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-		?>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -650,7 +650,7 @@ a {
 .page:not(.page-template-about):not(.home) .site-content,
 .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
 .blog .site-content,
-.single .site-content {
+.single:not(.single-product) .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,14 +662,14 @@ a {
   .page:not(.page-template-about):not(.home) .site-content #primary,
   .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #primary,
   .blog .site-content #primary,
-  .single .site-content #primary {
+  .single:not(.single-product) .site-content #primary {
     width: 70%;
     margin-right: 4rem;
     margin-top: 3rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
   .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary,
   .blog .site-content #secondary,
-  .single .site-content #secondary {
+  .single:not(.single-product) .site-content #secondary {
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,66 +688,66 @@ a {
     .page:not(.page-template-about):not(.home) .site-content #secondary .widget,
     .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget,
     .blog .site-content #secondary .widget,
-    .single .site-content #secondary .widget {
+    .single:not(.single-product) .site-content #secondary .widget {
       width: 260px;
       margin: 2.5rem 0 0 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:first-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:first-child,
       .blog .site-content #secondary .widget:first-child,
-      .single .site-content #secondary .widget:first-child {
+      .single:not(.single-product) .site-content #secondary .widget:first-child {
         margin-top: 3.5rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:last-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:last-child,
       .blog .site-content #secondary .widget:last-child,
-      .single .site-content #secondary .widget:last-child {
+      .single:not(.single-product) .site-content #secondary .widget:last-child {
         margin-bottom: 3rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget ul,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget ul,
       .blog .site-content #secondary .widget ul,
-      .single .site-content #secondary .widget ul {
+      .single:not(.single-product) .site-content #secondary .widget ul {
         list-style: none;
         padding: 0;
         margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .widget-title,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .widget-title,
       .blog .site-content #secondary .widget .widget-title,
-      .single .site-content #secondary .widget .widget-title {
+      .single:not(.single-product) .site-content #secondary .widget .widget-title {
         margin: 0 0 1.25rem 0;
         letter-spacing: 2px; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li,
       .blog .site-content #secondary .widget .textwidget ul li,
-      .single .site-content #secondary .widget .textwidget ul li {
+      .single:not(.single-product) .site-content #secondary .widget .textwidget ul li {
         margin: 1rem 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:first-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:first-child,
         .blog .site-content #secondary .widget .textwidget ul li:first-child,
-        .single .site-content #secondary .widget .textwidget ul li:first-child {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:first-child {
           margin-top: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:last-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:last-child,
         .blog .site-content #secondary .widget .textwidget ul li:last-child,
-        .single .site-content #secondary .widget .textwidget ul li:last-child {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:last-child {
           margin-bottom: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li a,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li a,
         .blog .site-content #secondary .widget .textwidget ul li a,
-        .single .site-content #secondary .widget .textwidget ul li a {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li a {
           padding-left: .75rem; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address,
         .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address,
         .blog .site-content #secondary .widget .textwidget ul li .address,
-        .single .site-content #secondary .widget .textwidget ul li .address {
+        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address {
           display: inline-grid; }
           .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address p,
           .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address p,
           .blog .site-content #secondary .widget .textwidget ul li .address p,
-          .single .site-content #secondary .widget .textwidget ul li .address p {
+          .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address p {
             margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .day-of-week,
       .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .day-of-week,
       .blog .site-content #secondary .widget .day-of-week,
-      .single .site-content #secondary .widget .day-of-week {
+      .single:not(.single-product) .site-content #secondary .widget .day-of-week {
         font-weight: bold; }
 
 .business-hours-widget-class p {
@@ -777,7 +777,7 @@ a {
   letter-spacing: 2px; }
 
 .post .entry-title,
-.single .entry-title {
+.single:not(.single-product) .entry-title {
   font-size: 2rem;
   color: #fff;
   background-color: #248A83;
@@ -789,18 +789,18 @@ a {
   top: 0;
   left: 0; }
   .post .entry-title a,
-  .single .entry-title a {
+  .single:not(.single-product) .entry-title a {
     color: #fff; }
     .post .entry-title a:hover,
-    .single .entry-title a:hover {
+    .single:not(.single-product) .entry-title a:hover {
       color: #f0e4d1; }
 
 .post .entry-header,
-.single .entry-header {
+.single:not(.single-product) .entry-header {
   position: relative; }
 
 .post .entry-meta,
-.single .entry-meta {
+.single:not(.single-product) .entry-meta {
   font-size: 1rem;
   font-style: normal;
   font-family: "Novecento", Arial, sans-serif;
@@ -813,19 +813,19 @@ a {
   bottom: 8px;
   right: 0; }
   .post .entry-meta img,
-  .single .entry-meta img {
+  .single:not(.single-product) .entry-meta img {
     max-width: 100%; }
   .post .entry-meta a,
-  .single .entry-meta a {
+  .single:not(.single-product) .entry-meta a {
     color: #fff; }
     .post .entry-meta a:hover,
-    .single .entry-meta a:hover {
+    .single:not(.single-product) .entry-meta a:hover {
       color: #f0e4d1; }
 
 .post .entry-content {
   margin: 1rem 0; }
 
-.single .entry-content p.p1 {
+.single:not(.single-product) .entry-content p.p1 {
   margin: 1.5rem 0; }
 
 .single .entry-footer {
@@ -1134,7 +1134,7 @@ h2.p1 {
 #post-27 .entry-content {
   margin-top: 1rem; }
 
-/* Shop Page*/
+/* Shop Archive Pages*/
 .post-type-archive-product .site-content,
 .tax-product_type .site-content {
   margin-top: 3rem; }
@@ -1177,6 +1177,11 @@ h2.p1 {
           font-family: "Novecento", Arial, sans-serif;
           font-size: 1.25rem;
           margin: 1.5rem 0; }
+    .post-type-archive-product .site-content .product-info-container .page-header .taxonomy-description, .post-type-archive-product .site-content .home .journal-info-container .page-header .taxonomy-description, .home .post-type-archive-product .site-content .journal-info-container .page-header .taxonomy-description,
+    .tax-product_type .site-content .product-info-container .page-header .taxonomy-description,
+    .tax-product_type .site-content .home .journal-info-container .page-header .taxonomy-description, .home
+    .tax-product_type .site-content .journal-info-container .page-header .taxonomy-description {
+      margin: 1.75rem 0; }
   .post-type-archive-product .site-content .product-info-container .products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper,
   .tax-product_type .site-content .product-info-container .products-wrapper,
   .tax-product_type .site-content .home .journal-info-container .products-wrapper, .home
@@ -1188,7 +1193,8 @@ h2.p1 {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-bottom: 4rem; }
     .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item,
     .tax-product_type .site-content .product-info-container .products-wrapper .shop-item,
     .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item, .home
@@ -1232,7 +1238,8 @@ h2.p1 {
         font-family: "Merriweather", "Times New Roman", Times, serif;
         text-transform: none;
         font-weight: normal;
-        margin: 0; }
+        margin: 0;
+        background: #fff; }
         .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before,
         .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:before,
         .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:before, .home
@@ -1242,6 +1249,7 @@ h2.p1 {
           width: 0;
           white-space: nowrap; }
 
+/* Single Product Page */
 .site-footer {
   height: auto;
   background: url(../../images/background/dark-wood.png) repeat-x;
@@ -1351,3 +1359,18 @@ h2.p1 {
   width: 50px; }
   .logo img {
     width: 50px; }
+
+.toggle-search {
+  padding: 0;
+  width: 20px;
+  height: 20px; }
+
+.search-form fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  height: 30px; }
+
+.search-form fieldset button {
+  display: none;
+  padding: 0; }

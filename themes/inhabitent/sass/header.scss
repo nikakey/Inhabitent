@@ -28,3 +28,23 @@
         width: 50px;
     }
 }
+
+.toggle-search
+{
+    padding: 0;
+    width:20px;
+    height:20px;
+}
+
+.search-form fieldset
+{
+    padding: 0;
+    border: none;
+    margin: 0;
+    height: 30px;
+}
+
+.search-form fieldset button{
+    display: none;
+    padding: 0;
+}

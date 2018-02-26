@@ -41,7 +41,7 @@
 .page:not(.page-template-about):not(.home) .site-content,
 .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
 .blog .site-content,
-.single .site-content {
+.single:not(.single-product) .site-content {
 	display: flex;
 	justify-content: space-between;
 
@@ -147,7 +147,7 @@
 }
 
 .post .entry-title,
-.single .entry-title {
+.single:not(.single-product) .entry-title {
 	font-size: 2rem;
 	color: $color__background-body;
 	background-color: $color__link;
@@ -167,12 +167,12 @@
 }
 
 .post .entry-header,
-.single .entry-header {
+.single:not(.single-product) .entry-header {
 	position: relative;
 }
 
 .post .entry-meta,
-.single .entry-meta {
+.single:not(.single-product) .entry-meta {
 	font-size: 1rem;
 	font-style: normal;
 	font-family: $font__heads;
@@ -199,7 +199,7 @@
 	margin: 1rem 0;
 }
 
-.single .entry-content {
+.single:not(.single-product) .entry-content {
 	p.p1 {
 		margin: $base__space-unit 0;
 	}
