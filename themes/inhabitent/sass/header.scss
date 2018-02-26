@@ -29,22 +29,43 @@
     }
 }
 
-.toggle-search
-{
-    padding: 0;
-    width:20px;
-    height:20px;
+.search-link {
+    color: $color__link;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color__link;
+    }
+    padding: 0 1rem;
 }
 
-.search-form fieldset
-{
-    padding: 0;
-    border: none;
-    margin: 0;
-    height: 30px;
-}
-
-.search-form fieldset button{
+#search-form {
     display: none;
-    padding: 0;
+    .toggle-search {
+        padding: 0;
+        color: $color__link;
+    }
+
+    fieldset {
+        padding: 0;
+        border: none;
+        margin: 0;
+        height: 30px;
+    }
+    label {
+        font-size: 1rem;
+        input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            outline: none;
+            font-family: $font__heads;
+            text-transform: $text__uppercase;
+        }
+    }
+    button {
+        display: none;
+        padding: 0;
+    }
 }

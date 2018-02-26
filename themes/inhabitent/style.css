@@ -1368,17 +1368,32 @@ h2.p1 {
   .logo img {
     width: 50px; }
 
-.toggle-search {
-  padding: 0;
-  width: 20px;
-  height: 20px; }
+.search-link {
+  color: #248A83;
+  padding: 0 1rem; }
+  .search-link:hover, .search-link:active, .search-link:focus {
+    color: #248A83; }
 
-.search-form fieldset {
-  padding: 0;
-  border: none;
-  margin: 0;
-  height: 30px; }
-
-.search-form fieldset button {
-  display: none;
-  padding: 0; }
+#search-form {
+  display: none; }
+  #search-form .toggle-search {
+    padding: 0;
+    color: #248A83; }
+  #search-form fieldset {
+    padding: 0;
+    border: none;
+    margin: 0;
+    height: 30px; }
+  #search-form label {
+    font-size: 1rem; }
+    #search-form label input {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+      outline: none;
+      font-family: "Novecento", Arial, sans-serif;
+      text-transform: uppercase; }
+  #search-form button {
+    display: none;
+    padding: 0; }
