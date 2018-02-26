@@ -85,7 +85,7 @@ function inhab_archives($query){
     if( is_post_type_archive('product') )
     {
 		$query->set('posts_per_page', 16);
-		$query->set('order', 'ABC');
+		$query->set('order', 'ASC');
 		$query->set('orderby', 'title');
 	}
 }
