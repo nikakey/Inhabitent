@@ -8,8 +8,8 @@ I created a custom WordPress theme called Inhabitent Theme for the website. The 
 * Created a custom page template for the About page and the Home page.
 * Created a custom post type for Products inside of a functionality plugin.
 * Created a custom taxonomy for Product Type inside of a functionality plugin.
-* Add custom fields for additional metadata.
-* Include a custom widget plugin for business hours and add this widgetized area in the sidebar of the website.
+* Added custom fields for additional metadata.
+* Included a custom widget plugin for business hours and added this widgetized area in the sidebar of the website.
 
 ## Key point of JavaScript:
-* Add a toggle-able search form to the site header where the search input is automatically focused when the form is toggled open.
+* Added a toggle-able search form to the site header where the search input is automatically focused when the form is toggled open.
