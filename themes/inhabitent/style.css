@@ -504,6 +504,27 @@ label {
   label .required {
     color: #d99054; }
 
+.error-404 .search-form {
+  display: block;
+  margin: 1.5rem 0 2.5rem 0; }
+  .error-404 .search-form fieldset {
+    padding: 0;
+    border: none;
+    margin: 0;
+    height: 30px; }
+  .error-404 .search-form label {
+    font-size: 1rem; }
+    .error-404 .search-form label input {
+      margin: 0;
+      padding: .25rem;
+      border: 1px solid #e1e1e1;
+      background-color: #f4f4f4;
+      outline: none;
+      font-family: "Merriweather", "Times New Roman", Times, serif;
+      text-transform: none; }
+  .error-404 .search-form button {
+    display: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1580,19 +1601,19 @@ h2.p1 {
   .search-link:hover, .search-link:active, .search-link:focus {
     color: #248A83; }
 
-#search-form {
+.site-header .search-form {
   display: none; }
-  #search-form .toggle-search {
+  .site-header .search-form .toggle-search {
     padding: 0;
     color: #248A83; }
-  #search-form fieldset {
+  .site-header .search-form fieldset {
     padding: 0;
     border: none;
     margin: 0;
     height: 30px; }
-  #search-form label {
+  .site-header .search-form label {
     font-size: 1rem; }
-    #search-form label input {
+    .site-header .search-form label input {
       margin: 0;
       padding: 0;
       border: 0;
@@ -1600,6 +1621,6 @@ h2.p1 {
       outline: none;
       font-family: "Novecento", Arial, sans-serif;
       text-transform: uppercase; }
-  #search-form button {
+  .site-header .search-form button {
     display: none;
     padding: 0; }

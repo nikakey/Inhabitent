@@ -115,3 +115,31 @@ label {
 		color: $color__brand-bright;
 	}
 }
+
+.error-404 {
+	.search-form {
+		display: block;
+		margin: 1.5rem 0 2.5rem 0;
+		fieldset {
+            padding: 0;
+            border: none;
+            margin: 0;
+            height: 30px;
+        }
+        label {
+            font-size: 1rem;
+            input {
+                margin: 0;
+                padding: .25rem;
+                border: $border__solid;
+                background-color: #f4f4f4;
+                outline: none;
+                font-family: $font__main;
+                text-transform: none;
+            }
+		}
+		button {
+			display: none;
+		}
+	}
+}
