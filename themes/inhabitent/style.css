@@ -403,7 +403,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.page-numbers {
+.page-numbers,
+.btn {
   color: #fff;
   background: #248A83;
   font-size: 1rem;
@@ -420,8 +421,14 @@ input[type="submit"],
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover,
-  .page-numbers:hover {
+  .page-numbers:hover,
+  .btn:hover {
     background-color: #19625d; }
+
+.btn {
+  padding: .75rem 1.25rem; }
+  .btn:hover {
+    color: #fff; }
 
 button,
 input[type="button"],
