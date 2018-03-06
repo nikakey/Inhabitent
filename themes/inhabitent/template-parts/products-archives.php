@@ -7,7 +7,7 @@
     <?php endif; ?>
     <div class="content-products-wrapper">
       <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-      <span class="price"><?php echo CFS()->get( 'price' ); ?></span>
+      <span class="price"><?php echo esc_html(CFS()->get( 'price' )); ?></span>
     </div>
 
   </header><!-- .entry-header -->
