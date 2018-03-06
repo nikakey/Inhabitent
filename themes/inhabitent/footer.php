@@ -28,7 +28,7 @@
 					</div>
 					<div class="footer-logo">
 						<a href="#">
-							<img src="<?php bloginfo('template_url'); ?>/images/logos/inhabitent-logo-text.svg" alt="Site Logo">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logos/inhabitent-logo-text.svg" alt="Site Logo">
 						</a>
 					</div>
 				</div><!-- .site-info -->

@@ -23,7 +23,7 @@ add_filter( 'body_class', 'inhabitent_body_classes' );
 
 function inhabitent_login_url( $url ) {
 	// Get and set the link to the website on the login screen
-    return get_bloginfo( 'url' );
+    return home_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_login_url' );
 

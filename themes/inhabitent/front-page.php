@@ -13,7 +13,7 @@ get_header(); ?>
 			<!-- Banner Section -->
 
 			<section class="front-page-banner">
-				<img src="<?php bloginfo('template_url'); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co. Logo">
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Camping Supply Co. Logo">
 			</section>
 
 			<!-- Shop Section -->
