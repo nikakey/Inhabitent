@@ -27,7 +27,7 @@
 						<p>Sunday: <span class="time">Closed</span></p>
 					</div>
 					<div class="footer-logo">
-						<a href="#">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logos/inhabitent-logo-text.svg" alt="Site Logo">
 						</a>
 					</div>
