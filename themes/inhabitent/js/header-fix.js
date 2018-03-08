@@ -9,10 +9,21 @@
     })
 
     // Scrolling on the Home and About pages
-    
-    $( 'body' ).hasClass( 'home' || 'page-template-about', $ ( window ).load(function() {
-        $( '#masthead' ).addClass( 'transparent-header' )
-    }))
+
+    //Check if this is the About page and add special header class when page is loaded
+
+    var location = window.location.href; // returns the full URL
+    if(/about/.test(location)) {
+        $('#masthead').addClass('transparent-header');
+    }
+
+    //Check if this is the Home page and add special header class when page is loaded
+
+    if ($('.home').length) {
+        $('#masthead').addClass('transparent-header');
+   }
+
+   //Add special header class when window is scroll down. Remove the class when a user scroll to the end of the banner image
     
     $( 'body' ).hasClass( 'home' || 'page-template-about', $( window ).scroll(function () {
         $( document ).scrollTop() < $( '.front-page-banner' ).height() || $( document ).scrollTop() < $( '.header-about' ).height() ? $( '#masthead' ).addClass( 'transparent-header' ) : $( '#masthead' ).removeClass( 'transparent-header' )
