@@ -728,7 +728,7 @@ a {
   .single:not(.single-product) .site-content #secondary,
   .search .site-content #secondary,
   .error404 .site-content #secondary {
-    margin-top: 3.5rem;
+    margin-top: 4.1rem;
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
