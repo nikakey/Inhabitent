@@ -92,7 +92,7 @@ get_header(); ?>
 				<!-- Getting the adventures posts data -->
 			
 				<?php
-   					$args = array( 'post_type' => 'adventure', 'order' => 'DESC', 'numberposts' => 4 );
+   					$args = array( 'post_type' => 'adventure', 'order' => 'ASC', 'numberposts' => 4 );
    					$adventure_posts = get_posts( $args ); // returns an array of posts
 				?>
 
@@ -102,15 +102,26 @@ get_header(); ?>
 						$count = 0; 
 					?>
 					<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+						<?php 
+							$i++;
+							$count = $i;
+						?>
+						<div class="adventure-block-<?php echo $count; ?>">
 							<?php 
-								$i++;
-								$count = $i;
+								if( $count == 1 ) :
 							?>
-							<div class="adventure-block-<?php echo $count; ?>">
-								<?php the_post_thumbnail('medium_large'); ?>
-								<h3 class="adventure-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<a class="white-btn" href="<?php the_permalink(); ?>">Read More</a>
-							</div>
+								<div class= "adventure-image-wrapper">
+									<?php the_post_thumbnail('full'); ?>
+								</div>
+							<?php else : ?>
+								<div class= "adventure-image-wrapper">
+									<?php the_post_thumbnail('medium_large'); ?>
+								</div>
+							<?php endif; ?>
+
+							<a href="<?php the_permalink(); ?>"><h3 class="adventure-title"><?php the_title(); ?></h3></a>
+							<a class="white-btn" href="<?php the_permalink(); ?>">Read More</a>
+						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 

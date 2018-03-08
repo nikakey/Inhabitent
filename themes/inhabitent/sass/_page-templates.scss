@@ -104,6 +104,101 @@
             grid-template-columns: 265px 265px 265px 265px;
             grid-template-rows: 265px 265px;
             grid-gap: 20px;
+            .adventure-block-1 {
+                grid-row: 1 / span 2;
+                grid-column: 1 / span 2;
+                font-size: 3rem;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4));
+                    content: '';
+                    width: 100%;
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .adventure-image-wrapper {
+                    position: absolute;
+                    height: 100%;
+                    img {
+                        max-height: 600px;
+                        max-width: none;
+                        width: auto;
+                        top: 50%;
+                        transform: translate(-20%,-50%);
+                        position: absolute;
+                    }
+                }
+            }
+            .adventure-block-2 {
+                grid-row: 1;
+                grid-column: 3 / span 2;
+                font-size: 2rem;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    @extend .adventure-block-1:after;
+                }
+                .adventure-image-wrapper {
+                    position: absolute;
+                    height: 100%;
+                    img {
+                        max-height: 600px;
+                        max-width: none;
+                        width: auto;
+                        top: 50%;
+                        transform: translate(-5%,-60%);
+                        position: absolute;
+                    }
+                }
+            }
+            .adventure-block-3 {
+                grid-row: 2;
+                grid-column: 3;
+                font-size: 1.5rem;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    @extend .adventure-block-1:after;
+                }
+                .adventure-image-wrapper {
+                    position: absolute;
+                    height: 100%;
+                    img {
+                        max-height: 600px;
+                        max-width: none;
+                        width: auto;
+                        top: 50%;
+                        transform: translate(-35%,-60%);
+                        position: absolute;
+                    }
+                }
+            }
+            .adventure-block-4 {
+                grid-row: 2;
+                grid-column: 4;
+                font-size: 1.5rem;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    @extend .adventure-block-1:after;
+                }
+                .adventure-image-wrapper {
+                    position: absolute;
+                    height: 100%;
+                    img {
+                        max-height: 600px;
+                        max-width: none;
+                        width: auto;
+                        top: 50%;
+                        transform: translate(-30%,-60%);
+                        position: absolute;
+                    }
+                }
+            }
         }
         .adventure-title {
             font-family: $font__main;
@@ -113,44 +208,17 @@
             padding: 0 1rem;
             line-height: 1.2;
             margin: 2rem 0 1rem 0;
+            position: relative;
+            top: 0;
+            z-index: 2;
             &:hover {
                 color: $color__link-hover-light;
             }
         }
-        .adventure-block-1 {
-            background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url(../../images/adventures/canoe-girl.jpg) no-repeat;
-            background-size: cover;
-            background-position: center bottom;
-            grid-row: 1 / span 2;
-            grid-column: 1 / span 2;
-            font-size: 3rem;
-        }
-        .adventure-block-2 {
-            background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url(../../images/adventures/beach-bonfire.jpg) no-repeat;
-            background-size: cover;
-            background-position: center bottom;
-            grid-row: 1;
-            grid-column: 3 / span 2;
-            font-size: 2rem;
-        }
-        .adventure-block-3 {
-            background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url(../../images/adventures/mountain-hikers.jpg) no-repeat;
-            background-size: cover;
-            background-position: center bottom;
-            grid-row: 2;
-            grid-column: 3;
-            font-size: 1.5rem;
-        }
-        .adventure-block-4 {
-            background: linear-gradient(hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.4)), url(../../images/adventures/night-sky.jpg) no-repeat;
-            background-size: cover;
-            background-position: center bottom;
-            grid-row: 2;
-            grid-column: 4;
-            font-size: 1.5rem;
-        }
         .white-btn {
             margin-left: 1rem;
+            position: relative;
+            z-index: 2;
         }
         .adventures-btn {
             font-size: 1.25rem;
