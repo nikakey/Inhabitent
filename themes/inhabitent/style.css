@@ -1597,6 +1597,11 @@ h2.p1 {
     color: #fff; }
     .transparent-header a:hover, .transparent-header a:focus, .transparent-header a:active {
       color: #f0e4d1; }
+  .transparent-header .logo {
+    background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: 50px; }
 
 .header-container {
   display: -webkit-box;
@@ -1621,9 +1626,10 @@ h2.p1 {
   display: none; }
 
 .logo {
-  width: 50px; }
-  .logo img {
-    width: 50px; }
+  width: 50px;
+  height: 50px;
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px; }
 
 .search-link {
   color: #248A83;

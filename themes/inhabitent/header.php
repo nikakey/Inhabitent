@@ -24,11 +24,9 @@
 						<div class="site-branding">
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-							<div class="logo">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-									<img id="logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logos/inhabitent-logo-tent.svg" alt="Inhabitent Logo">
-								</a>
-							</div>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<div class="logo"></div>
+							</a>
 						</div><!-- .site-branding -->
 
 						<nav id="site-navigation" class="main-navigation" role="navigation">
