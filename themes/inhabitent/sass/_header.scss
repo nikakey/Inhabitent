@@ -1,11 +1,32 @@
 .site-header {
     padding: .5rem 0;
     border-bottom: $border__solid;
-    // position: fixed;
-    // // top: 0;
-    // z-index: 1;
-    // width: 100%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     background: $color__fixed-header-backgroud;
+}
+
+.transparent-header {
+    border: 0;
+    background: transparent;
+    position: absolute;
+    label {
+        input[type="search"]{
+            color: $color__background-body;
+            &::placeholder {
+                color: $color__link-hover-light;
+            }
+        }
+    }
+    a {
+        color: $color__background-body;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color__link-hover-light;
+        }
+    }
 }
 
 .header-container {

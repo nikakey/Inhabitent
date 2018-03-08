@@ -721,13 +721,14 @@ a {
   .error404 .site-content #primary {
     width: 70%;
     margin-right: 4rem;
-    margin-top: 3rem; }
+    margin-top: 6rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
   .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary,
   .blog .site-content #secondary,
   .single:not(.single-product) .site-content #secondary,
   .search .site-content #secondary,
   .error404 .site-content #secondary {
+    margin-top: 3.5rem;
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1271,7 +1272,7 @@ h2.p1 {
 /* Shop Archive Pages*/
 .post-type-archive-product .site-content,
 .tax-product_type .site-content {
-  margin-top: 3rem; }
+  padding-top: 6rem; }
   .post-type-archive-product .site-content .product-info-container .page-header, .post-type-archive-product .site-content .home .journal-info-container .page-header, .home .post-type-archive-product .site-content .journal-info-container .page-header, .post-type-archive-product .site-content .home .adventures-info-container .page-header, .home .post-type-archive-product .site-content .adventures-info-container .page-header,
   .tax-product_type .site-content .product-info-container .page-header,
   .tax-product_type .site-content .home .journal-info-container .page-header, .home
@@ -1573,7 +1574,29 @@ h2.p1 {
 .site-header {
   padding: .5rem 0;
   border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   background: rgba(255, 255, 255, 0.77); }
+
+.transparent-header {
+  border: 0;
+  background: transparent;
+  position: absolute; }
+  .transparent-header label input[type="search"] {
+    color: #fff; }
+    .transparent-header label input[type="search"]::-webkit-input-placeholder {
+      color: #f0e4d1; }
+    .transparent-header label input[type="search"]:-ms-input-placeholder {
+      color: #f0e4d1; }
+    .transparent-header label input[type="search"]::-ms-input-placeholder {
+      color: #f0e4d1; }
+    .transparent-header label input[type="search"]::placeholder {
+      color: #f0e4d1; }
+  .transparent-header a {
+    color: #fff; }
+    .transparent-header a:hover, .transparent-header a:focus, .transparent-header a:active {
+      color: #f0e4d1; }
 
 .header-container {
   display: -webkit-box;
