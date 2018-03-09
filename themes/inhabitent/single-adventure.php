@@ -26,7 +26,7 @@ get_header(); ?>
 					<h2 class="post-author">By <?php the_author(); ?></h2>
                 </header><!-- .entry-header -->
                 
-                <div class="about-content">
+                <div class="about-content adventure-text">
                     <?php the_content(); ?>
                     <?php
                         wp_link_pages( array(
