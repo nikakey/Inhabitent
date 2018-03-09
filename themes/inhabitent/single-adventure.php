@@ -16,13 +16,14 @@ get_header(); ?>
                 
             <div class="adventure-image-container">
 				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
+					<?php the_post_thumbnail( 'full' ); ?>
 				<?php endif; ?>
 			</div>
 
-            <div class="entry-content container">
+            <div class="entry-content container about-content">
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<h2 class="post-author">By <?php the_author(); ?></h2>
                 </header><!-- .entry-header -->
                 
                 <div class="about-content">

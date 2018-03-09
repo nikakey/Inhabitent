@@ -694,7 +694,7 @@ a {
 .page:not(.page-template-about):not(.home) .site-content,
 .archive .site-content,
 .blog .site-content,
-.single .site-content,
+.single:not(.single-adventure) .site-content,
 .tax-product_type .site-content,
 .search .site-content,
 .error404 .site-content {
@@ -705,7 +705,7 @@ a {
 .page:not(.page-template-about):not(.home) .site-content,
 .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content,
 .blog .site-content,
-.single:not(.single-product) .site-content,
+.single:not(.single-product):not(.single-adventure) .site-content,
 .search .site-content,
 .error404 .site-content {
   display: -webkit-box;
@@ -719,7 +719,7 @@ a {
   .page:not(.page-template-about):not(.home) .site-content #primary,
   .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #primary,
   .blog .site-content #primary,
-  .single:not(.single-product) .site-content #primary,
+  .single:not(.single-product):not(.single-adventure) .site-content #primary,
   .search .site-content #primary,
   .error404 .site-content #primary {
     width: 70%;
@@ -728,7 +728,7 @@ a {
   .page:not(.page-template-about):not(.home) .site-content #secondary,
   .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary,
   .blog .site-content #secondary,
-  .single:not(.single-product) .site-content #secondary,
+  .single:not(.single-product):not(.single-adventure) .site-content #secondary,
   .search .site-content #secondary,
   .error404 .site-content #secondary {
     margin-top: 4.1rem;
@@ -750,7 +750,7 @@ a {
     .page:not(.page-template-about):not(.home) .site-content #secondary .widget,
     .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget,
     .blog .site-content #secondary .widget,
-    .single:not(.single-product) .site-content #secondary .widget,
+    .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget,
     .search .site-content #secondary .widget,
     .error404 .site-content #secondary .widget {
       width: 260px;
@@ -758,21 +758,21 @@ a {
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:first-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget:first-child,
       .blog .site-content #secondary .widget:first-child,
-      .single:not(.single-product) .site-content #secondary .widget:first-child,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget:first-child,
       .search .site-content #secondary .widget:first-child,
       .error404 .site-content #secondary .widget:first-child {
         margin-top: 3.5rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:last-child,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget:last-child,
       .blog .site-content #secondary .widget:last-child,
-      .single:not(.single-product) .site-content #secondary .widget:last-child,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget:last-child,
       .search .site-content #secondary .widget:last-child,
       .error404 .site-content #secondary .widget:last-child {
         margin-bottom: 3rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget ul,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget ul,
       .blog .site-content #secondary .widget ul,
-      .single:not(.single-product) .site-content #secondary .widget ul,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget ul,
       .search .site-content #secondary .widget ul,
       .error404 .site-content #secondary .widget ul {
         list-style: none;
@@ -781,7 +781,7 @@ a {
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .widget-title,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .widget-title,
       .blog .site-content #secondary .widget .widget-title,
-      .single:not(.single-product) .site-content #secondary .widget .widget-title,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .widget-title,
       .search .site-content #secondary .widget .widget-title,
       .error404 .site-content #secondary .widget .widget-title {
         margin: 0 0 1.25rem 0;
@@ -789,49 +789,49 @@ a {
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li,
       .blog .site-content #secondary .widget .textwidget ul li,
-      .single:not(.single-product) .site-content #secondary .widget .textwidget ul li,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li,
       .search .site-content #secondary .widget .textwidget ul li,
       .error404 .site-content #secondary .widget .textwidget ul li {
         margin: 1rem 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:first-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li:first-child,
         .blog .site-content #secondary .widget .textwidget ul li:first-child,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:first-child,
+        .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li:first-child,
         .search .site-content #secondary .widget .textwidget ul li:first-child,
         .error404 .site-content #secondary .widget .textwidget ul li:first-child {
           margin-top: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:last-child,
         .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li:last-child,
         .blog .site-content #secondary .widget .textwidget ul li:last-child,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:last-child,
+        .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li:last-child,
         .search .site-content #secondary .widget .textwidget ul li:last-child,
         .error404 .site-content #secondary .widget .textwidget ul li:last-child {
           margin-bottom: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li a,
         .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li a,
         .blog .site-content #secondary .widget .textwidget ul li a,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li a,
+        .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li a,
         .search .site-content #secondary .widget .textwidget ul li a,
         .error404 .site-content #secondary .widget .textwidget ul li a {
           padding-left: .75rem; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address,
         .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li .address,
         .blog .site-content #secondary .widget .textwidget ul li .address,
-        .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address,
+        .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li .address,
         .search .site-content #secondary .widget .textwidget ul li .address,
         .error404 .site-content #secondary .widget .textwidget ul li .address {
           display: inline-grid; }
           .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address p,
           .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li .address p,
           .blog .site-content #secondary .widget .textwidget ul li .address p,
-          .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address p,
+          .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .textwidget ul li .address p,
           .search .site-content #secondary .widget .textwidget ul li .address p,
           .error404 .site-content #secondary .widget .textwidget ul li .address p {
             margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .day-of-week,
       .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .day-of-week,
       .blog .site-content #secondary .widget .day-of-week,
-      .single:not(.single-product) .site-content #secondary .widget .day-of-week,
+      .single:not(.single-product):not(.single-adventure) .site-content #secondary .widget .day-of-week,
       .search .site-content #secondary .widget .day-of-week,
       .error404 .site-content #secondary .widget .day-of-week {
         font-weight: bold; }
@@ -863,7 +863,7 @@ a {
   letter-spacing: 2px; }
 
 .post .entry-title,
-.single:not(.single-product) .entry-title {
+.single:not(.single-product):not(.single-adventure) .entry-title {
   font-size: 2rem;
   color: #fff;
   background-color: #248A83;
@@ -875,10 +875,10 @@ a {
   top: 0;
   left: 0; }
   .post .entry-title a,
-  .single:not(.single-product) .entry-title a {
+  .single:not(.single-product):not(.single-adventure) .entry-title a {
     color: #fff; }
     .post .entry-title a:hover,
-    .single:not(.single-product) .entry-title a:hover {
+    .single:not(.single-product):not(.single-adventure) .entry-title a:hover {
       color: #f0e4d1; }
 
 .post .entry-header,
@@ -886,7 +886,7 @@ a {
   position: relative; }
 
 .post .entry-meta,
-.single:not(.single-product) .entry-meta {
+.single:not(.single-product):not(.single-adventure) .entry-meta {
   font-size: 1rem;
   font-style: normal;
   font-family: "Novecento", Arial, sans-serif;
@@ -899,19 +899,19 @@ a {
   bottom: 8px;
   right: 0; }
   .post .entry-meta img,
-  .single:not(.single-product) .entry-meta img {
+  .single:not(.single-product):not(.single-adventure) .entry-meta img {
     max-width: 100%; }
   .post .entry-meta a,
-  .single:not(.single-product) .entry-meta a {
+  .single:not(.single-product):not(.single-adventure) .entry-meta a {
     color: #fff; }
     .post .entry-meta a:hover,
-    .single:not(.single-product) .entry-meta a:hover {
+    .single:not(.single-product):not(.single-adventure) .entry-meta a:hover {
       color: #f0e4d1; }
 
 .post .entry-content {
   margin: 1rem 0; }
 
-.single:not(.single-product) .entry-content p.p1 {
+.single:not(.single-product):not(.single-adventure) .entry-content p.p1 {
   margin: 1.5rem 0; }
 
 .single .entry-footer {
@@ -1551,6 +1551,28 @@ h2.p1 {
       margin-left: 1rem;
       position: relative;
       z-index: 2; }
+
+/* Adventure Single Page */
+.single-adventure h1 {
+  font-size: 2.35rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  letter-spacing: 2px; }
+
+.single-adventure .post-author {
+  text-transform: uppercase;
+  color: #404040;
+  font-size: 1.25rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 1.5rem; }
+
+.single-adventure p {
+  margin: 1.5rem 0; }
+
+.single-adventure .social-btns {
+  margin-bottom: 4rem; }
 
 .site-footer {
   height: auto;

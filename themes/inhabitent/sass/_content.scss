@@ -32,7 +32,7 @@
 .page:not(.page-template-about):not(.home) .site-content,
 .archive .site-content,
 .blog .site-content,
-.single .site-content,
+.single:not(.single-adventure) .site-content,
 .tax-product_type .site-content,
 .search .site-content,
 .error404 .site-content {
@@ -43,7 +43,7 @@
 .page:not(.page-template-about):not(.home) .site-content,
 .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content,
 .blog .site-content,
-.single:not(.single-product) .site-content,
+.single:not(.single-product):not(.single-adventure) .site-content,
 .search .site-content,
 .error404 .site-content {
 	display: flex;
@@ -153,7 +153,7 @@
 }
 
 .post .entry-title,
-.single:not(.single-product) .entry-title {
+.single:not(.single-product):not(.single-adventure) .entry-title {
 	font-size: 2rem;
 	color: $color__background-body;
 	background-color: $color__link;
@@ -178,7 +178,7 @@
 }
 
 .post .entry-meta,
-.single:not(.single-product) .entry-meta {
+.single:not(.single-product):not(.single-adventure) .entry-meta {
 	font-size: 1rem;
 	font-style: normal;
 	font-family: $font__heads;
@@ -205,7 +205,7 @@
 	margin: 1rem 0;
 }
 
-.single:not(.single-product) .entry-content {
+.single:not(.single-product):not(.single-adventure) .entry-content {
 	p.p1 {
 		margin: $base__space-unit 0;
 	}
