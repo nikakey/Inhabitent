@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Shop Archive Pages
 	## Single Product Page
 	## Search and 404 Pages
+	## Adventure Archive Page
 # Footer
 # Header
 --------------------------------------------------------------*/
@@ -702,7 +703,7 @@ a {
   width: 1120px; }
 
 .page:not(.page-template-about):not(.home) .site-content,
-.archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
+.archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content,
 .blog .site-content,
 .single:not(.single-product) .site-content,
 .search .site-content,
@@ -716,7 +717,7 @@ a {
   /* Content Area */
   /* Sidebar */ }
   .page:not(.page-template-about):not(.home) .site-content #primary,
-  .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #primary,
+  .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #primary,
   .blog .site-content #primary,
   .single:not(.single-product) .site-content #primary,
   .search .site-content #primary,
@@ -725,7 +726,7 @@ a {
     margin-right: 4rem;
     margin-top: 6rem; }
   .page:not(.page-template-about):not(.home) .site-content #secondary,
-  .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary,
+  .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary,
   .blog .site-content #secondary,
   .single:not(.single-product) .site-content #secondary,
   .search .site-content #secondary,
@@ -747,7 +748,7 @@ a {
             align-items: flex-end;
     border-left: 1px solid #e1e1e1; }
     .page:not(.page-template-about):not(.home) .site-content #secondary .widget,
-    .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget,
+    .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget,
     .blog .site-content #secondary .widget,
     .single:not(.single-product) .site-content #secondary .widget,
     .search .site-content #secondary .widget,
@@ -755,21 +756,21 @@ a {
       width: 260px;
       margin: 2.5rem 0 0 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:first-child,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:first-child,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget:first-child,
       .blog .site-content #secondary .widget:first-child,
       .single:not(.single-product) .site-content #secondary .widget:first-child,
       .search .site-content #secondary .widget:first-child,
       .error404 .site-content #secondary .widget:first-child {
         margin-top: 3.5rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget:last-child,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget:last-child,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget:last-child,
       .blog .site-content #secondary .widget:last-child,
       .single:not(.single-product) .site-content #secondary .widget:last-child,
       .search .site-content #secondary .widget:last-child,
       .error404 .site-content #secondary .widget:last-child {
         margin-bottom: 3rem; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget ul,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget ul,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget ul,
       .blog .site-content #secondary .widget ul,
       .single:not(.single-product) .site-content #secondary .widget ul,
       .search .site-content #secondary .widget ul,
@@ -778,7 +779,7 @@ a {
         padding: 0;
         margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .widget-title,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .widget-title,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .widget-title,
       .blog .site-content #secondary .widget .widget-title,
       .single:not(.single-product) .site-content #secondary .widget .widget-title,
       .search .site-content #secondary .widget .widget-title,
@@ -786,49 +787,49 @@ a {
         margin: 0 0 1.25rem 0;
         letter-spacing: 2px; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li,
       .blog .site-content #secondary .widget .textwidget ul li,
       .single:not(.single-product) .site-content #secondary .widget .textwidget ul li,
       .search .site-content #secondary .widget .textwidget ul li,
       .error404 .site-content #secondary .widget .textwidget ul li {
         margin: 1rem 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:first-child,
-        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:first-child,
+        .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li:first-child,
         .blog .site-content #secondary .widget .textwidget ul li:first-child,
         .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:first-child,
         .search .site-content #secondary .widget .textwidget ul li:first-child,
         .error404 .site-content #secondary .widget .textwidget ul li:first-child {
           margin-top: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li:last-child,
-        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li:last-child,
+        .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li:last-child,
         .blog .site-content #secondary .widget .textwidget ul li:last-child,
         .single:not(.single-product) .site-content #secondary .widget .textwidget ul li:last-child,
         .search .site-content #secondary .widget .textwidget ul li:last-child,
         .error404 .site-content #secondary .widget .textwidget ul li:last-child {
           margin-bottom: 0; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li a,
-        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li a,
+        .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li a,
         .blog .site-content #secondary .widget .textwidget ul li a,
         .single:not(.single-product) .site-content #secondary .widget .textwidget ul li a,
         .search .site-content #secondary .widget .textwidget ul li a,
         .error404 .site-content #secondary .widget .textwidget ul li a {
           padding-left: .75rem; }
         .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address,
-        .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address,
+        .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li .address,
         .blog .site-content #secondary .widget .textwidget ul li .address,
         .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address,
         .search .site-content #secondary .widget .textwidget ul li .address,
         .error404 .site-content #secondary .widget .textwidget ul li .address {
           display: inline-grid; }
           .page:not(.page-template-about):not(.home) .site-content #secondary .widget .textwidget ul li .address p,
-          .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .textwidget ul li .address p,
+          .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .textwidget ul li .address p,
           .blog .site-content #secondary .widget .textwidget ul li .address p,
           .single:not(.single-product) .site-content #secondary .widget .textwidget ul li .address p,
           .search .site-content #secondary .widget .textwidget ul li .address p,
           .error404 .site-content #secondary .widget .textwidget ul li .address p {
             margin: 0; }
       .page:not(.page-template-about):not(.home) .site-content #secondary .widget .day-of-week,
-      .archive:not(.post-type-archive-product):not(.tax-product_type) .site-content #secondary .widget .day-of-week,
+      .archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content #secondary .widget .day-of-week,
       .blog .site-content #secondary .widget .day-of-week,
       .single:not(.single-product) .site-content #secondary .widget .day-of-week,
       .search .site-content #secondary .widget .day-of-week,
@@ -1327,154 +1328,103 @@ h2.p1 {
 
 /* Shop Archive Pages*/
 .post-type-archive-product .site-content,
-.tax-product_type .site-content {
+.tax-product_type .site-content,
+.post-type-archive-adventure .site-content {
   padding-top: 6rem; }
-  .post-type-archive-product .site-content .product-info-container .page-header, .post-type-archive-product .site-content .home .journal-info-container .page-header, .home .post-type-archive-product .site-content .journal-info-container .page-header, .post-type-archive-product .site-content .home .adventures-info-container .page-header, .home .post-type-archive-product .site-content .adventures-info-container .page-header,
-  .tax-product_type .site-content .product-info-container .page-header,
-  .tax-product_type .site-content .home .journal-info-container .page-header, .home
-  .tax-product_type .site-content .journal-info-container .page-header,
-  .tax-product_type .site-content .home .adventures-info-container .page-header, .home
-  .tax-product_type .site-content .adventures-info-container .page-header {
+  .post-type-archive-product .site-content .page-header,
+  .tax-product_type .site-content .page-header,
+  .post-type-archive-adventure .site-content .page-header {
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 2.5rem; }
-    .post-type-archive-product .site-content .product-info-container .page-header .product-type-container, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container, .post-type-archive-product .site-content .home .adventures-info-container .page-header .product-type-container, .home .post-type-archive-product .site-content .adventures-info-container .page-header .product-type-container,
-    .tax-product_type .site-content .product-info-container .page-header .product-type-container,
-    .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container, .home
-    .tax-product_type .site-content .journal-info-container .page-header .product-type-container,
-    .tax-product_type .site-content .home .adventures-info-container .page-header .product-type-container, .home
-    .tax-product_type .site-content .adventures-info-container .page-header .product-type-container {
+
+.post-type-archive-product .site-content .product-type-container,
+.tax-product_type .site-content .product-type-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .post-type-archive-product .site-content .product-type-container .product-type-taxonomy,
+  .tax-product_type .site-content .product-type-container .product-type-taxonomy {
+    margin-right: 2.75rem; }
+    .post-type-archive-product .site-content .product-type-container .product-type-taxonomy:last-child,
+    .tax-product_type .site-content .product-type-container .product-type-taxonomy:last-child {
+      margin-right: 0; }
+    .post-type-archive-product .site-content .product-type-container .product-type-taxonomy p,
+    .tax-product_type .site-content .product-type-container .product-type-taxonomy p {
+      text-transform: uppercase;
+      font-family: "Novecento", Arial, sans-serif;
+      font-size: 1.25rem;
+      margin: 1.5rem 0; }
+
+.post-type-archive-product .site-content .taxonomy-description,
+.tax-product_type .site-content .taxonomy-description {
+  margin: 1.75rem 0; }
+
+.post-type-archive-product .site-content .products-wrapper,
+.tax-product_type .site-content .products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4rem; }
+  .post-type-archive-product .site-content .products-wrapper .shop-item,
+  .tax-product_type .site-content .products-wrapper .shop-item {
+    width: 23%;
+    border: 1px solid #e1e1e1;
+    overflow: hidden; }
+    .post-type-archive-product .site-content .products-wrapper .shop-item .image-wrapper,
+    .tax-product_type .site-content .products-wrapper .shop-item .image-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy, .post-type-archive-product .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy, .home .post-type-archive-product .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy,
-      .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy,
-      .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy, .home
-      .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy,
-      .tax-product_type .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy, .home
-      .tax-product_type .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy {
-        margin-right: 2.75rem; }
-        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .post-type-archive-product .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home .post-type-archive-product .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy:last-child,
-        .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy:last-child,
-        .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home
-        .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy:last-child,
-        .tax-product_type .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy:last-child, .home
-        .tax-product_type .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy:last-child {
-          margin-right: 0; }
-        .post-type-archive-product .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy p, .post-type-archive-product .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .home .post-type-archive-product .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .post-type-archive-product .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy p, .home .post-type-archive-product .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy p,
-        .tax-product_type .site-content .product-info-container .page-header .product-type-container .product-type-taxonomy p,
-        .tax-product_type .site-content .home .journal-info-container .page-header .product-type-container .product-type-taxonomy p, .home
-        .tax-product_type .site-content .journal-info-container .page-header .product-type-container .product-type-taxonomy p,
-        .tax-product_type .site-content .home .adventures-info-container .page-header .product-type-container .product-type-taxonomy p, .home
-        .tax-product_type .site-content .adventures-info-container .page-header .product-type-container .product-type-taxonomy p {
-          text-transform: uppercase;
-          font-family: "Novecento", Arial, sans-serif;
-          font-size: 1.25rem;
-          margin: 1.5rem 0; }
-    .post-type-archive-product .site-content .product-info-container .page-header .taxonomy-description, .post-type-archive-product .site-content .home .journal-info-container .page-header .taxonomy-description, .home .post-type-archive-product .site-content .journal-info-container .page-header .taxonomy-description, .post-type-archive-product .site-content .home .adventures-info-container .page-header .taxonomy-description, .home .post-type-archive-product .site-content .adventures-info-container .page-header .taxonomy-description,
-    .tax-product_type .site-content .product-info-container .page-header .taxonomy-description,
-    .tax-product_type .site-content .home .journal-info-container .page-header .taxonomy-description, .home
-    .tax-product_type .site-content .journal-info-container .page-header .taxonomy-description,
-    .tax-product_type .site-content .home .adventures-info-container .page-header .taxonomy-description, .home
-    .tax-product_type .site-content .adventures-info-container .page-header .taxonomy-description {
-      margin: 1.75rem 0; }
-  .post-type-archive-product .site-content .product-info-container .products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper,
-  .tax-product_type .site-content .product-info-container .products-wrapper,
-  .tax-product_type .site-content .home .journal-info-container .products-wrapper, .home
-  .tax-product_type .site-content .journal-info-container .products-wrapper,
-  .tax-product_type .site-content .home .adventures-info-container .products-wrapper, .home
-  .tax-product_type .site-content .adventures-info-container .products-wrapper {
+              justify-content: center; }
+      .post-type-archive-product .site-content .products-wrapper .shop-item .image-wrapper img,
+      .tax-product_type .site-content .products-wrapper .shop-item .image-wrapper img {
+        border-bottom: 5px solid #e1e1e1;
+        height: 250px;
+        width: auto; }
+  .post-type-archive-product .site-content .products-wrapper .content-products-wrapper,
+  .tax-product_type .site-content .products-wrapper .content-products-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 4rem; }
-    .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .shop-item, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .shop-item,
-    .tax-product_type .site-content .product-info-container .products-wrapper .shop-item,
-    .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item, .home
-    .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item,
-    .tax-product_type .site-content .home .adventures-info-container .products-wrapper .shop-item, .home
-    .tax-product_type .site-content .adventures-info-container .products-wrapper .shop-item {
-      width: 23%;
-      border: 1px solid #e1e1e1;
-      overflow: hidden; }
-      .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .shop-item .image-wrapper, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .shop-item .image-wrapper,
-      .tax-product_type .site-content .product-info-container .products-wrapper .shop-item .image-wrapper,
-      .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper, .home
-      .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper,
-      .tax-product_type .site-content .home .adventures-info-container .products-wrapper .shop-item .image-wrapper, .home
-      .tax-product_type .site-content .adventures-info-container .products-wrapper .shop-item .image-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .post-type-archive-product .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .shop-item .image-wrapper img, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .shop-item .image-wrapper img,
-        .tax-product_type .site-content .product-info-container .products-wrapper .shop-item .image-wrapper img,
-        .tax-product_type .site-content .home .journal-info-container .products-wrapper .shop-item .image-wrapper img, .home
-        .tax-product_type .site-content .journal-info-container .products-wrapper .shop-item .image-wrapper img,
-        .tax-product_type .site-content .home .adventures-info-container .products-wrapper .shop-item .image-wrapper img, .home
-        .tax-product_type .site-content .adventures-info-container .products-wrapper .shop-item .image-wrapper img {
-          border-bottom: 5px solid #e1e1e1;
-          height: 250px;
-          width: auto; }
-    .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .content-products-wrapper,
-    .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper,
-    .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper, .home
-    .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper,
-    .tax-product_type .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper, .home
-    .tax-product_type .site-content .adventures-info-container .products-wrapper .content-products-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding: .5rem 0 .75rem 1rem; }
-      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .entry-title, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .content-products-wrapper .entry-title,
-      .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title,
-      .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title, .home
-      .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title,
-      .tax-product_type .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .entry-title, .home
-      .tax-product_type .site-content .adventures-info-container .products-wrapper .content-products-wrapper .entry-title {
-        font-size: 1rem;
-        font-family: "Merriweather", "Times New Roman", Times, serif;
-        text-transform: none;
-        font-weight: normal;
-        margin: 0;
-        background: #fff; }
-        .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:after, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .content-products-wrapper .entry-title:after,
-        .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .entry-title:after,
-        .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home
-        .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .entry-title:after,
-        .tax-product_type .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .entry-title:after, .home
-        .tax-product_type .site-content .adventures-info-container .products-wrapper .content-products-wrapper .entry-title:after {
-          float: right;
-          content: '........................................';
-          width: 0;
-          white-space: nowrap;
-          padding-left: .25rem; }
-      .post-type-archive-product .site-content .product-info-container .products-wrapper .content-products-wrapper .price, .post-type-archive-product .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .price, .home .post-type-archive-product .site-content .journal-info-container .products-wrapper .content-products-wrapper .price, .post-type-archive-product .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .price, .home .post-type-archive-product .site-content .adventures-info-container .products-wrapper .content-products-wrapper .price,
-      .tax-product_type .site-content .product-info-container .products-wrapper .content-products-wrapper .price,
-      .tax-product_type .site-content .home .journal-info-container .products-wrapper .content-products-wrapper .price, .home
-      .tax-product_type .site-content .journal-info-container .products-wrapper .content-products-wrapper .price,
-      .tax-product_type .site-content .home .adventures-info-container .products-wrapper .content-products-wrapper .price, .home
-      .tax-product_type .site-content .adventures-info-container .products-wrapper .content-products-wrapper .price {
-        background-color: #fff;
-        padding-right: .5rem;
+    padding: .5rem 0 .75rem 1rem; }
+    .post-type-archive-product .site-content .products-wrapper .content-products-wrapper .entry-title,
+    .tax-product_type .site-content .products-wrapper .content-products-wrapper .entry-title {
+      font-size: 1rem;
+      font-family: "Merriweather", "Times New Roman", Times, serif;
+      text-transform: none;
+      font-weight: normal;
+      margin: 0;
+      background: #fff; }
+      .post-type-archive-product .site-content .products-wrapper .content-products-wrapper .entry-title:after,
+      .tax-product_type .site-content .products-wrapper .content-products-wrapper .entry-title:after {
+        float: right;
+        content: '........................................';
+        width: 0;
+        white-space: nowrap;
         padding-left: .25rem; }
+    .post-type-archive-product .site-content .products-wrapper .content-products-wrapper .price,
+    .tax-product_type .site-content .products-wrapper .content-products-wrapper .price {
+      background-color: #fff;
+      padding-right: .5rem;
+      padding-left: .25rem; }
 
 /* Single Product Page */
 .single-product .site-content .product {
@@ -1548,6 +1498,59 @@ h2.p1 {
 .search .search-pagination {
   padding-top: 2rem;
   border-top: 1px solid #e1e1e1; }
+
+/* Adventure Archive Page */
+.post-type-archive-adventure .adventures-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 8rem; }
+  .post-type-archive-adventure .adventures-wrapper .adventure-item {
+    font-size: 3rem;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 0; }
+    .post-type-archive-adventure .adventures-wrapper .adventure-item:after {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      content: '';
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .post-type-archive-adventure .adventures-wrapper .adventure-item .image-wrapper {
+      position: absolute;
+      height: 100%; }
+      .post-type-archive-adventure .adventures-wrapper .adventure-item .image-wrapper img {
+        max-height: 500px;
+        max-width: none;
+        width: auto;
+        top: 50%;
+        -webkit-transform: translate(-10%, -50%);
+                transform: translate(-10%, -50%);
+        position: absolute; }
+    .post-type-archive-adventure .adventures-wrapper .adventure-item .entry-title {
+      font-family: "Merriweather", "Times New Roman", Times, serif;
+      font-weight: normal;
+      color: #fff;
+      text-transform: none;
+      padding: 0 1rem;
+      line-height: 1.2;
+      margin: 4.5rem 0 2rem 0;
+      position: relative;
+      top: 0;
+      z-index: 2;
+      font-size: 3rem; }
+      .post-type-archive-adventure .adventures-wrapper .adventure-item .entry-title:hover {
+        color: #f0e4d1;
+        cursor: pointer; }
+    .post-type-archive-adventure .adventures-wrapper .adventure-item .white-btn {
+      margin-left: 1rem;
+      position: relative;
+      z-index: 2; }
 
 .site-footer {
   height: auto;

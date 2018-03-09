@@ -41,7 +41,7 @@
 }
 
 .page:not(.page-template-about):not(.home) .site-content,
-.archive:not(.post-type-archive-product):not(.tax-product_type) .site-content,
+.archive:not(.post-type-archive-product):not(.tax-product_type):not(.post-type-archive-adventure) .site-content,
 .blog .site-content,
 .single:not(.single-product) .site-content,
 .search .site-content,

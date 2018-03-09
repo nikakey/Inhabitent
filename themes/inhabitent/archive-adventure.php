@@ -24,8 +24,8 @@ get_header(); ?>
                     <?php /* Start the Loop */ ?>
                     <div class="adventures-wrapper">
                         <?php while ( have_posts() ) : the_post(); ?>
-
-                            <?php get_template_part( 'template-parts/adventures-archives', 'none' ); ?>
+                            
+                                <?php get_template_part( 'template-parts/adventures-archives', 'none' ); ?>
                             
                         <?php endwhile; ?>
                     </div>
