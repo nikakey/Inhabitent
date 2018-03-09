@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Single Product Page
 	## Search and 404 Pages
 	## Adventure Archive Page
+	## Adventure Single Page
 # Footer
 # Header
 --------------------------------------------------------------*/
@@ -1555,9 +1556,10 @@ h2.p1 {
 /* Adventure Single Page */
 .single-adventure h1 {
   font-size: 2.35rem;
-  margin-bottom: 0;
+  margin-bottom: .75rem;
   margin-top: 2rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 1.25; }
 
 .single-adventure .post-author {
   text-transform: uppercase;
