@@ -79,7 +79,7 @@ wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_change_header' );
 
-// Title Shop Stuff and return 16 product items per page
+// Return 16 product items per page in Shop Stuff and 4 items per page in Latest Adventures
 
 function inhab_archives($query){
     if( is_post_type_archive('product') )
@@ -87,6 +87,12 @@ function inhab_archives($query){
 		$query->set('posts_per_page', 16);
 		$query->set('order', 'ASC');
 		$query->set('orderby', 'title');
+	}
+	if( is_post_type_archive('adventure') )
+    {
+		$query->set('posts_per_page', 4);
+		$query->set('order', 'ASC');
+		$query->set('orderby', 'date');
 	}
 }
 
@@ -104,6 +110,9 @@ function inhabitent_shop_title ( $title ) {
 	{
 		$terms = wp_get_post_terms( get_the_ID(), 'product_type', array("fields" => "all") );
 		$title = $terms[0]->name;
+	}
+	if( is_post_type_archive( 'adventure' ) ) {
+		$title = 'Latest Adventures';
 	}
     return $title;
 }
