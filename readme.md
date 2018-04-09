@@ -6,7 +6,7 @@ This is a website of a camping supply company, created using WordPress as a CMS.
 ![alt text](themes/inhabitent/images/for-readme/screenshot-frontpage.png "Screen shot of the home page of the project")
 
 
-I created a custom WordPress theme called Inhabitent Theme for the website. The website contains blog posts, product descriptions, a custom static homepage, an About page, and an Contact page.
+I created a custom WordPress theme called Inhabitent Theme for the website. The website contains blog posts, product descriptions, a custom static homepage, an About page, and a Contact page.
 
 ## Key points of WordPress:
 * Created a custom page template for the About page and the Home page.
