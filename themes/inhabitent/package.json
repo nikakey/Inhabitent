@@ -4,7 +4,7 @@
   "description": "A theme for the Inhabitent website.",
   "main": "gulpfile.js",
   "dependencies": {
-    "hoek": "^5.0.3",
+    "hoek": "^5.0.4",
     "lodash": "^4.17.10",
     "mime": "^2.3.1",
     "sshpk": "^1.14.2"
