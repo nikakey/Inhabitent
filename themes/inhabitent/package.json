@@ -4,9 +4,13 @@
   "description": "A theme for the Inhabitent website.",
   "main": "gulpfile.js",
   "dependencies": {
+    "atob": "^2.1.2",
+    "cryptiles": "^4.1.2",
     "hoek": "^5.0.4",
     "lodash": "^4.17.10",
+    "macaddress": "^0.2.9",
     "mime": "^2.3.1",
+    "randomatic": "^3.1.0",
     "sshpk": "^1.14.2"
   },
   "devDependencies": {
